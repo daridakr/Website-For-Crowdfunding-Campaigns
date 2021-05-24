@@ -1,0 +1,483 @@
+input
+ {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  overflow: visible;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input
+ {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  overflow: visible;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+.form-control-plaintext.form-control-sm,
+.input-group-sm > .form-control-plaintext.form-control,
+.input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
+.input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
+.input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
+.input-group-sm > .input-group-append > .form-control-plaintext.btn,
+.form-control-plaintext.form-control-lg,
+.input-group-lg > .form-control-plaintext.form-control,
+.input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
+.input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
+.input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
+.input-group-lg > .input-group-append > .form-control-plaintext.btn {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.form-control-sm,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-prepend > .input-group-text,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-append > .btn {
+    padding: 0.25rem 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+select.form-control-sm:not([size]):not([multiple]),
+.input-group-sm > select.form-control:not([size]):not([multiple]),
+.input-group-sm > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
+.input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
+.input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
+.input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
+    height: calc(2.125rem + 2px);
+}
+
+.form-control-lg,
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-append > .btn {
+    padding: 0.5625rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+select.form-control-lg:not([size]):not([multiple]),
+.input-group-lg > select.form-control:not([size]):not([multiple]),
+.input-group-lg > .input-group-prepend > select.input-group-text:not([size]):not([multiple]),
+.input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
+.input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
+.input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
+    height: calc(4.125rem + 2px);
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+}
+
+    .form-check-input:disabled ~ .form-check-label {
+        color: #6c757d;
+    }
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+}
+
+    [type="search"]::-webkit-search-cancel-button,
+    [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    .form-control:focus {
+        color: #495057;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: #d176e1;
+        outline: 0;
+        box-shadow: none, 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+    }
+
+.form-control {
+    background: no-repeat center bottom, center calc(100% - 1px);
+    background-size: 0 100%, 100% 100%;
+    border: 0;
+    height: 36px;
+    transition: background 0s ease-out;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+
+    .form-control:focus,
+    .bmd-form-group.is-focused .form-control {
+        background-size: 100% 100%, 100% 100%;
+        transition-duration: 0.3s;
+        box-shadow: none;
+    }
+
+    .form-control:-ms-input-placeholder {
+        color: #AAAAAA;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .form-control::-webkit-input-placeholder {
+        color: #AAAAAA;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+.has-white .form-control::-moz-placeholder {
+    color: #ffffff;
+}
+
+.has-white .form-control:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.has-white .form-control::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+/*************************************/
+
+    .radio label label:has(input[type=radio][disabled]),
+    .radio label label:has(input[type=radio][disabled]):hover,
+    .radio label label:has(input[type=radio][disabled]):focus,
+    .radio label label:has(input[type=checkbox][disabled]),
+    .radio label label:has(input[type=checkbox][disabled]):hover,
+    .radio label label:has(input[type=checkbox][disabled]):focus,
+    .is-focused .radio label label:has(input[type=radio][disabled]),
+    .is-focused .radio label label:has(input[type=radio][disabled]):hover,
+    .is-focused .radio label label:has(input[type=radio][disabled]):focus,
+    .is-focused .radio label label:has(input[type=checkbox][disabled]),
+    .is-focused .radio label label:has(input[type=checkbox][disabled]):hover,
+    .is-focused .radio label label:has(input[type=checkbox][disabled]):focus,
+    .radio-inline label:has(input[type=radio][disabled]),
+    .radio-inline label:has(input[type=radio][disabled]):hover,
+    .radio-inline label:has(input[type=radio][disabled]):focus,
+    .radio-inline label:has(input[type=checkbox][disabled]),
+    .radio-inline label:has(input[type=checkbox][disabled]):hover,
+    .radio-inline label:has(input[type=checkbox][disabled]):focus,
+    .is-focused .radio-inline label:has(input[type=radio][disabled]),
+    .is-focused .radio-inline label:has(input[type=radio][disabled]):hover,
+    .is-focused .radio-inline label:has(input[type=radio][disabled]):focus,
+    .is-focused .radio-inline label:has(input[type=checkbox][disabled]),
+    .is-focused .radio-inline label:has(input[type=checkbox][disabled]):hover,
+    .is-focused .radio-inline label:has(input[type=checkbox][disabled]):focus,
+    .checkbox label label:has(input[type=radio][disabled]),
+    .checkbox label label:has(input[type=radio][disabled]):hover,
+    .checkbox label label:has(input[type=radio][disabled]):focus,
+    .checkbox label label:has(input[type=checkbox][disabled]),
+    .checkbox label label:has(input[type=checkbox][disabled]):hover,
+    .checkbox label label:has(input[type=checkbox][disabled]):focus,
+    .is-focused .checkbox label label:has(input[type=radio][disabled]),
+    .is-focused .checkbox label label:has(input[type=radio][disabled]):hover,
+    .is-focused .checkbox label label:has(input[type=radio][disabled]):focus,
+    .is-focused .checkbox label label:has(input[type=checkbox][disabled]),
+    .is-focused .checkbox label label:has(input[type=checkbox][disabled]):hover,
+    .is-focused .checkbox label label:has(input[type=checkbox][disabled]):focus,
+    .checkbox-inline label:has(input[type=radio][disabled]),
+    .checkbox-inline label:has(input[type=radio][disabled]):hover,
+    .checkbox-inline label:has(input[type=radio][disabled]):focus,
+    .checkbox-inline label:has(input[type=checkbox][disabled]),
+    .checkbox-inline label:has(input[type=checkbox][disabled]):hover,
+    .checkbox-inline label:has(input[type=checkbox][disabled]):focus,
+    .is-focused .checkbox-inline label:has(input[type=radio][disabled]),
+    .is-focused .checkbox-inline label:has(input[type=radio][disabled]):hover,
+    .is-focused .checkbox-inline label:has(input[type=radio][disabled]):focus,
+    .is-focused .checkbox-inline label:has(input[type=checkbox][disabled]),
+    .is-focused .checkbox-inline label:has(input[type=checkbox][disabled]):hover,
+    .is-focused .checkbox-inline label:has(input[type=checkbox][disabled]):focus,
+    .switch label label:has(input[type=radio][disabled]),
+    .switch label label:has(input[type=radio][disabled]):hover,
+    .switch label label:has(input[type=radio][disabled]):focus,
+    .switch label label:has(input[type=checkbox][disabled]),
+    .switch label label:has(input[type=checkbox][disabled]):hover,
+    .switch label label:has(input[type=checkbox][disabled]):focus,
+    .is-focused .switch label label:has(input[type=radio][disabled]),
+    .is-focused .switch label label:has(input[type=radio][disabled]):hover,
+    .is-focused .switch label label:has(input[type=radio][disabled]):focus,
+    .is-focused .switch label label:has(input[type=checkbox][disabled]),
+    .is-focused .switch label label:has(input[type=checkbox][disabled]):hover,
+    .is-focused .switch label label:has(input[type=checkbox][disabled]):focus,
+
+.was-validated .has-info .is-focused .form-check-input:valid ~ .form-check-label,
+.has-info .is-focused .form-check-input.is-valid ~ .form-check-label {
+    color: #00bcd4;
+}
+
+.was-validated .has-info .is-focused .form-check-input:valid ~ .valid-feedback,
+.was-validated .has-info .is-focused .form-check-input:valid ~ .valid-tooltip,
+.has-info .is-focused .form-check-input.is-valid ~ .valid-feedback,
+.has-info .is-focused .form-check-input.is-valid ~ .valid-tooltip {
+    display: block;
+}
+
+.was-validated .has-info .is-focused .custom-control-input:valid ~ .custom-control-label,
+.has-info .is-focused .custom-control-input.is-valid ~ .custom-control-label {
+    color: #00bcd4;
+}
+
+    .was-validated .has-info .is-focused .custom-control-input:valid ~ .custom-control-label::before,
+    .has-info .is-focused .custom-control-input.is-valid ~ .custom-control-label::before {
+        background-color: #55ecff;
+    }
+
+.was-validated .has-info .is-focused .custom-control-input:valid ~ .valid-feedback,
+.was-validated .has-info .is-focused .custom-control-input:valid ~ .valid-tooltip,
+.has-info .is-focused .custom-control-input.is-valid ~ .valid-feedback,
+.has-info .is-focused .custom-control-input.is-valid ~ .valid-tooltip {
+    display: block;
+}
+
+.was-validated .has-info .is-focused .custom-control-input:valid:checked ~ .custom-control-label::before,
+.has-info .is-focused .custom-control-input.is-valid:checked ~ .custom-control-label::before {
+    background-color: #08e3ff;
+}
+
+.was-validated .has-info .is-focused .custom-control-input:valid:focus ~ .custom-control-label::before,
+.has-info .is-focused .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fafafa, 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
+}
+
+.was-validated .has-info .is-focused .custom-file-input:valid ~ .custom-file-label,
+.has-info .is-focused .custom-file-input.is-valid ~ .custom-file-label {
+    border-color: #00bcd4;
+}
+
+    .was-validated .has-info .is-focused .custom-file-input:valid ~ .custom-file-label::before,
+    .has-info .is-focused .custom-file-input.is-valid ~ .custom-file-label::before {
+        border-color: inherit;
+    }
+
+.was-validated .has-info .is-focused .custom-file-input:valid ~ .valid-feedback,
+.was-validated .has-info .is-focused .custom-file-input:valid ~ .valid-tooltip,
+.has-info .is-focused .custom-file-input.is-valid ~ .valid-feedback,
+.has-info .is-focused .custom-file-input.is-valid ~ .valid-tooltip {
+    display: block;
+}
+
+.was-validated .has-info .is-focused .custom-file-input:valid:focus ~ .custom-file-label,
+.has-info .is-focused .custom-file-input.is-valid:focus ~ .custom-file-label {
+    box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
+}
+
+.has-white .form-control,
+.is-focused .has-white .form-control {
+    background-image: linear-gradient(to top, #ffffff 2px, rgba(255, 255, 255, 0) 2px), linear-gradient(to top, #FFFFFF 1px, rgba(255, 255, 255, 0) 1px);
+}
+
+.has-white .is-focused .valid-tooltip {
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    display: none;
+    max-width: 100%;
+    padding: .5rem;
+    margin-top: .1rem;
+    font-size: .875rem;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: .2rem;
+}
+
+.was-validated .has-white .is-focused .form-control:valid,
+.has-white .is-focused .form-control.is-valid,
+.was-validated .has-white .is-focused .custom-select:valid,
+.has-white .is-focused .custom-select.is-valid {
+    border-color: #ffffff;
+}
+
+    .was-validated .has-white .is-focused .form-control:valid:focus,
+    .has-white .is-focused .form-control.is-valid:focus,
+    .was-validated .has-white .is-focused .custom-select:valid:focus,
+    .has-white .is-focused .custom-select.is-valid:focus {
+        border-color: #ffffff;
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    }
+
+    .was-validated .has-white .is-focused .form-control:valid ~ .valid-feedback,
+    .was-validated .has-white .is-focused .form-control:valid ~ .valid-tooltip,
+    .has-white .is-focused .form-control.is-valid ~ .valid-feedback,
+    .has-white .is-focused .form-control.is-valid ~ .valid-tooltip,
+    .was-validated .has-white .is-focused .custom-select:valid ~ .valid-feedback,
+    .was-validated .has-white .is-focused .custom-select:valid ~ .valid-tooltip,
+    .has-white .is-focused .custom-select.is-valid ~ .valid-feedback,
+    .has-white .is-focused .custom-select.is-valid ~ .valid-tooltip {
+        display: block;
+    }
+
+.was-validated .has-white .is-focused .form-check-input:valid ~ .form-check-label,
+.has-white .is-focused .form-check-input.is-valid ~ .form-check-label {
+    color: #ffffff;
+}
+
+.was-validated .has-white .is-focused .form-check-input:valid ~ .valid-feedback,
+.was-validated .has-white .is-focused .form-check-input:valid ~ .valid-tooltip,
+.has-white .is-focused .form-check-input.is-valid ~ .valid-feedback,
+.has-white .is-focused .form-check-input.is-valid ~ .valid-tooltip {
+    display: block;
+}
+
+.was-validated .has-white .is-focused .custom-control-input:valid ~ .custom-control-label,
+.has-white .is-focused .custom-control-input.is-valid ~ .custom-control-label {
+    color: #ffffff;
+}
+
+    .was-validated .has-white .is-focused .custom-control-input:valid ~ .custom-control-label::before,
+    .has-white .is-focused .custom-control-input.is-valid ~ .custom-control-label::before {
+        background-color: white;
+    }
+
+.was-validated .has-white .is-focused .custom-control-input:valid ~ .valid-feedback,
+.was-validated .has-white .is-focused .custom-control-input:valid ~ .valid-tooltip,
+.has-white .is-focused .custom-control-input.is-valid ~ .valid-feedback,
+.has-white .is-focused .custom-control-input.is-valid ~ .valid-tooltip {
+    display: block;
+}
+
+.was-validated .has-white .is-focused .custom-control-input:valid:checked ~ .custom-control-label::before,
+.has-white .is-focused .custom-control-input.is-valid:checked ~ .custom-control-label::before {
+    background-color: white;
+}
+
+.was-validated .has-white .is-focused .custom-control-input:valid:focus ~ .custom-control-label::before,
+.has-white .is-focused .custom-control-input.is-valid:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fafafa, 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.was-validated .has-white .is-focused .custom-file-input:valid ~ .custom-file-label,
+.has-white .is-focused .custom-file-input.is-valid ~ .custom-file-label {
+    border-color: #ffffff;
+}
+
+    .was-validated .has-white .is-focused .custom-file-input:valid ~ .custom-file-label::before,
+    .has-white .is-focused .custom-file-input.is-valid ~ .custom-file-label::before {
+        border-color: inherit;
+    }
+
+.was-validated .has-white .is-focused .custom-file-input:valid ~ .valid-feedback,
+.was-validated .has-white .is-focused .custom-file-input:valid ~ .valid-tooltip,
+.has-white .is-focused .custom-file-input.is-valid ~ .valid-feedback,
+.has-white .is-focused .custom-file-input.is-valid ~ .valid-tooltip {
+    display: block;
+}
+
+.was-validated .has-white .is-focused .custom-file-input:valid:focus ~ .custom-file-label,
+.has-white .is-focused .custom-file-input.is-valid:focus ~ .custom-file-label {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.has-white .is-focused [class^='bmd-label'],
+.has-white .is-focused [class*=' bmd-label'] {
+    color: #ffffff;
+}
+
+.has-white .is-focused .bmd-label-placeholder {
+    color: #ffffff;
+}
+
+.has-white .is-focused .form-control {
+    border-color: #ffffff;
+}
+
+.has-white .is-focused .bmd-help {
+    color: #555;
+}
+
+.has-white .form-control:focus {
+    color: #ffffff;
+}
+
+.has-warning [class^='bmd-label'],
+.has-warning [class*=' bmd-label'] {
+    color: #ff9800;
+}
+
+.has-warning .form-control,
+.is-focused .has-warning .form-control {
+    background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+}
+
+    .has-warning .form-control:invalid {
+        background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+    }
+
+    .has-warning .form-control:read-only {
+        background-image: linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+    }
+
+    fieldset[disabled][disabled] .has-warning .form-control,
+    .has-warning .form-control.disabled,
+    .has-warning .form-control:disabled,
+    .has-warning .form-control[disabled] {
+        background-image: linear-gradient(to right, #d2d2d2 0%, #d2d2d2 30%, transparent 30%, transparent 100%);
+        background-repeat: repeat-x;
+        background-size: 3px 1px;
+    }
+
+    .has-warning .form-control.form-control-success,
+    .is-focused .has-warning .form-control.form-control-success {
+        background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjNWNiODVjIiBkPSJNMjMzLjggNjEwYy0xMy4zIDAtMjYtNi0zNC0xNi44TDkwLjUgNDQ4LjhDNzYuMyA0MzAgODAgNDAzLjMgOTguOCAzODljMTguOC0xNC4yIDQ1LjUtMTAuNCA1OS44IDguNGw3MiA5NUw0NTEuMyAyNDJjMTIuNS0yMCAzOC44LTI2LjIgNTguOC0xMy43IDIwIDEyLjQgMjYgMzguNyAxMy43IDU4LjhMMjcwIDU5MGMtNy40IDEyLTIwLjIgMTkuNC0zNC4zIDIwaC0yeiIvPjwvc3ZnPg==";
+    }
+
+    .has-warning .form-control.form-control-warning,
+    .is-focused .has-warning .form-control.form-control-warning {
+        background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZjBhZDRlIiBkPSJNNjAzIDY0MC4ybC0yNzguNS01MDljLTMuOC02LjYtMTAuOC0xMC42LTE4LjUtMTAuNnMtMTQuNyA0LTE4LjUgMTAuNkw5IDY0MC4yYy0zLjcgNi41LTMuNiAxNC40LjIgMjAuOCAzLjggNi41IDEwLjggMTAuNCAxOC4zIDEwLjRoNTU3YzcuNiAwIDE0LjYtNCAxOC40LTEwLjQgMy41LTYuNCAzLjYtMTQuNCAwLTIwLjh6bS0yNjYuNC0zMGgtNjEuMlY1NDloNjEuMnY2MS4yem0wLTEwN2gtNjEuMlYzMDRoNjEuMnYxOTl6Ii8+PC9zdmc+";
+    }
+
+    .has-warning .form-control.form-control-danger,
+    .is-focused .has-warning .form-control.form-control-danger {
+        background-image: linear-gradient(to top, #ff9800 2px, rgba(255, 152, 0, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px), "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTIgNzkyIj48cGF0aCBmaWxsPSIjZDk1MzRmIiBkPSJNNDQ3IDU0NC40Yy0xNC40IDE0LjQtMzcuNiAxNC40LTUyIDBsLTg5LTkyLjctODkgOTIuN2MtMTQuNSAxNC40LTM3LjcgMTQuNC01MiAwLTE0LjQtMTQuNC0xNC40LTM3LjYgMC01Mmw5Mi40LTk2LjMtOTIuNC05Ni4zYy0xNC40LTE0LjQtMTQuNC0zNy42IDAtNTJzMzcuNi0xNC4zIDUyIDBsODkgOTIuOCA4OS4yLTkyLjdjMTQuNC0xNC40IDM3LjYtMTQuNCA1MiAwIDE0LjMgMTQuNCAxNC4zIDM3LjYgMCA1MkwzNTQuNiAzOTZsOTIuNCA5Ni40YzE0LjQgMTQuNCAxNC40IDM3LjYgMCA1MnoiLz48L3N2Zz4=";
+    }

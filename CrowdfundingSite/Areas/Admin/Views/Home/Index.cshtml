@@ -1,0 +1,340 @@
+﻿@model EntitiesViewModel
+@{
+    string strTitle = "Панель администратора";
+    ViewBag.Title = strTitle;
+    int countOfCampaign = Model.Campaigns.Count();
+    int countOfUsers = Model.Users.Count();
+    int countOfSubjects = Model.Subjects.Count();
+    int countOfTags = Model.Tags.Count();
+}
+
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/search-list.css">
+
+
+<div>
+    <div class="col-md-8 mx-auto text-center">
+        <h3 class="display-4" style="color: white">@strTitle</h3>
+    </div>
+    <div class="col-md-8 mx-auto text-center">
+        <div class="nav-wrapper">
+            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                <li class="nav-item">
+                    <a class="btn btn-warning btn-icon mt-3 mb-sm-0 mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true" style="font-weight: 100; width: 270px; text-transform:none"><i class="ni ni-chart-pie-35 mr-2"></i>Статистика</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-warning btn-icon mt-3 mb-sm-0 mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false" style="font-weight: 100; width: 270px; text-transform:none"><i class="fa fa-user mr-2"></i>Пользователи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-warning btn-icon mt-3 mb-sm-0 mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false" style="font-weight: 100; width: 270px; text-transform:none"><i class="ni ni-money-coins mr-2"></i>Кампании</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <div class="small-box bg-info">
+                                    <div class="inner">
+                                        <h3>@countOfCampaign</h3>
+                                        <p>Кампаний</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-bag"></i>
+                                    </div>
+                                    <a id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false" class="small-box-footer">Просмотр <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="small-box bg-success">
+                                    <div class="inner">
+                                        <h3>@countOfUsers</h3>
+                                        <p>Пользователей</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-stats-bars"></i>
+                                    </div>
+                                    <a id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false" class="small-box-footer">Просмотр <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="small-box bg-warning">
+                                    <div class="inner">
+                                        <h3>@countOfSubjects</h3>
+                                        <p>Тематики</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-person-add"></i>
+                                    </div>
+                                    <a href="#" class="small-box-footer" data-toggle="modal" data-target="#exampleModal">Создать <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Subj Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Создание тематики</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form asp-area="Admin" asp-controller="Subjects" asp-action="Create" method="post" enctype="multipart/form-data">
+                                                <input type="hidden" asp-for="Subject.Id" />
+                                                <input type="hidden" asp-for="Subject.DateAdded" />
+                                                <input asp-for="Subject.Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название тематики" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px">
+                                                <input type="submit" class="btn btn-warning btn-icon" value="Создать" />
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="small-box bg-danger">
+                                    <div class="inner">
+                                        <h3>@countOfTags</h3>
+                                        <p>Тегов</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="ion ion-pie-graph"></i>
+                                    </div>
+                                    <a href="#" class="small-box-footer" data-toggle="modal" data-target="#tagModal">Создать <i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Tag Modal -->
+                            <div class="modal fade" id="tagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Создание тега</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form asp-area="Admin" asp-controller="Tags" asp-action="Create" method="post" enctype="multipart/form-data">
+                                                <input type="hidden" asp-for="Tag.Id" />
+                                                <input type="hidden" asp-for="Tag.DateAdded" />
+                                                <input asp-for="Tag.Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название тега" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px">
+                                                <input type="submit" class="btn btn-warning btn-icon" value="Создать" />
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Поиск тематик -->
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск тематик..." style="text-align: center !important">
+                        <ul id="myUL">
+                            @if (Model.Subjects.Any())
+                            {
+                                @foreach (Subject subject in Model.Subjects)
+                                {
+                                    <li><a>@subject.Title</a></li>
+                                }
+                            }
+                        </ul>
+                        <br />
+                        <div>
+                            <!-- Поиск тегов -->
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск тегов..." style="text-align: center !important">
+                            <ul id="myUL">
+                                @if (Model.Tags.Any())
+                                {
+                                    @foreach (Tag tag in Model.Tags)
+                                    {
+                                        <li><a>@tag.Title</a></li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Пользователи -->
+                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                        <div class="text-left">
+                            <button class="btn btn-primary btn-sm" style="background-color: #fb6340; border-color: #fb6340; margin-right: 0px; text-align: left !important; margin: 0px 0px 10px 0px;">Сортировка</button>
+                        </div>
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти..." style="text-align: center !important">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">ID</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Страна</th>
+                                    <th>Город</th>
+                                    <th>Камп.</th>
+                                    <th>Бонус.</th>
+                                    <th>Ком.</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @if (Model.Users.Any())
+                                {
+                                    @foreach (CrowdUser user in Model.Users)
+                                    {
+                                        @if (user.UserName != "admin")
+                                        {
+                                <tr>
+                                    <td class="text-center">@user.Id</td>
+                                    <td>@user.UserName</td>
+                                    <td>@user.UserSurname</td>
+                                    <td>@user.Country</td>
+                                    <!--<td class="text-right">&euro; 99,225</td>-->
+                                    <td>@user.City</td>
+                                    <td title="Количество кампаний">@user.Campaignes.Count()</td>
+                                    <td title="Оплаченные бонусы">@user.PaidBonuses.Count()</td>
+                                    <td title="Количество комментариев">@user.Comments.Count()</td>
+                                    <td class="td-actions text-right">
+                                        <button type="button" rel="tooltip" class="btn btn-info btn-icon btn-sm " data-original-title="" title="Просмотреть профиль">
+                                            <i class="ni ni-circle-08 pt-1"></i>
+                                        </button>
+                                        <button type="button" rel="tooltip" class="btn btn-success btn-icon btn-sm " data-original-title="" title="Опции">
+                                            <i class="ni ni-settings-gear-65 pt-1"></i>
+                                        </button>
+                                        <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm " data-original-title="" title="Удалить пользователя">
+                                            <i class="ni ni-fat-remove pt-1"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                                }
+                                                }
+                                                }
+                                            
+                             </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Кампании -->
+                    <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                        <!-- Панель управления -->
+                        <div class="bd-example">
+                            <div class="text-left">
+                                <button class="btn btn-primary btn-sm" style="background-color: #fb6340; border-color: #fb6340; margin-right: 0px; text-align: left !important; margin: 0px 0px 10px 0px;">Сортировка</button>
+                                <a asp-controller="CampaignItems" asp-action="Edit" asp-route-id="">
+                                    <button class="btn btn-primary btn-sm" style=" margin: 0px 0px 10px 0px; background-color: #fb6340; border-color: #fb6340">Создать кампанию</button>
+                                </a>
+                            </div>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти..." style="text-align: center !important">
+                        </div>
+
+                        <!--список кампаний-->
+                        <div class="list-group">
+                            @if (Model.Campaigns.Any())
+                            {
+                                @foreach (Campaign entity in Model.Campaigns)
+                                {
+                                    <div>
+
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <div class="col-lg-6" style="text-align: left">
+                                                    <h5 class="mb-1">@entity.Title</h5>
+                                                </div>
+                                                <div class="col-lg-6" style="text-align: right">
+                                                    <small>@entity.DateAdded</small><br />
+                                                    <small>@entity.EndDate</small><br />
+                                                    @{
+                                                        string creator = @Model.Users.Where(user => user.Id == @entity.CreatorId).Select(user => user.UserName).First();
+                                                    }
+                                                    <small>@creator</small>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1">@entity.Subtitle</p>
+                                            @{ string title = @Model.Subjects.Where(sub => sub.Id == @entity.ThemeId).Select(sub => sub.Title).First(); }
+
+                                            <small>@title</small>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="CampaignItems" asp-action="Delete" method="post">
+                                            <input type="hidden" name="id" value="@entity.Id">
+                                            <button href="#" onclick="document.getElementById('form-@entity.Id').submit();" type="button" class="btn btn-sm btn-danger btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Удалить</button>
+                                        </form>
+                                        <a asp-area="Admin" asp-controller="CampaignItems" asp-action="Edit" asp-route-id="@entity.Id">
+                                            <button type="button" class="btn btn-sm btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Редактировать</button>
+                                        </a>
+                                    </div>
+                                    <br />
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+            <input type="submit" class="btn btn-warning btn-icon mt-3 mb-sm-0" value="Выйти" />
+        </form>
+    </center>
+</div>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+<!--
+    <div>
+        <h3>Кампании</h3>
+        <div class="div-box">
+            <a asp-area="Admin" asp-controller="CampaignItems" asp-action="Edit" asp-route-id="">Добавить кампанию</a>
+        </div>
+        @if (Model.Campaigns.Any())
+        {
+            <div>
+                @foreach (Campaign entity in Model.Campaigns)
+                {
+                    <div>
+                        <a asp-area="Admin" asp-controller="CampaignItems" asp-action="Edit" asp-route-id="@entity.Id">редактировать</a>
+                        |
+                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="CampaignItems" asp-action="Delete" method="post">
+                            <input type="hidden" name="id" value="@entity.Id">
+                            <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">удалить</a>
+                        </form>
+                        |
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+                            @($"{entity.Title}")
+                        </a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <div class="div-box">
+        <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+            <input type="submit" value="Выйти" />
+        </form>
+    </div>
+</div>
+        -->

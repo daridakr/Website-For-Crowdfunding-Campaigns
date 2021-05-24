@@ -1,0 +1,72 @@
+﻿    <!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+<script>
+    window.TrackJS &&
+        TrackJS.install({
+            token: "ee6fab19c5a04ac1a32a645abde4613a",
+            application: "argon-design-system-pro"
+        });</script>
+<script src="~/js/scripts.min.js" asp-append-version="true"></script>
+<script type="text/javascript" src="~/jqcloud/jqcloud-1.0.3.js"></script>
+
+<script type="text/javascript">
+    // создание массива тегов
+    var word_list = [
+        //weight - важность тега (количество материалов отмеченных данным тегом)
+        /*
+         html объект указывающий html атрибуты элемента тега
+         (например {class: «customclass», title: «A title»}).
+         С помощъю данного свойства для тега может быть установлен любой html атрибут кроме атрибута ID
+
+         link если параметр установлен, то текст тега будет заключен в html ссылку (тег <a>).
+         кроме того параметр link может быть объектом указывающим атрибуты для тега <a>
+         (например: {href: «http://myurl.com», title: «A link»})
+
+         afterWordRender функция обратного вызова, которая будет вызвана после отображения тега.
+         Ссылка this в функции указывает на jQuery объект тега <span> в который заключен текст тега.
+
+         handlers объект обработчиков событий которые будут добавлены к элементу тега (например: {click: function() { alert(«it works!»); } })
+         */
+        { text: "Lorem", weight: 13, link: "https://github.com/DukeLeNoir/jQCloud" },
+        { text: "Ipsum", weight: 10.5, html: { title: "My Title", "class": "custom-class" }, link: { href: "http://jquery.com/", target: "_blank" } },
+        { text: "Dolor", weight: 9.4 },
+        { text: "Sit", weight: 8 },
+        { text: "Amet", weight: 6.2 },
+        { text: "Consectetur", weight: 5 },
+        { text: "Adipiscing", weight: 5 },
+        { text: "Elit", weight: 5 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 15 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 25 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 9 },
+        { text: "Nam et", weight: 16 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 10 },
+        { text: "Nam et", weight: 11 },
+        { text: "Nam et", weight: 15 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 25 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 9 },
+        { text: "Nam et", weight: 16 },
+        { text: "Nam et", weight: 5 },
+        { text: "Nam et", weight: 10 },
+        { text: "Nam et", weight: 11 }
+    ];
+    $(function () {
+        $("#tagcloud").jQCloud(word_list, {
+
+        });
+    });
+    /*
+     * center (object): x и у координаты центра облака тегов, по отношению к размерам блока —
+     * контейнера облака тегов (например: {х: 300 г: 150}). По умолчанию центр блока — контейнера облака тегов.
+afterCloudRender (function): функция обратного вызова которая будет вызвана после того как все облако тегов будет показано.
+delayedMode (boolean): Если true, тего показываются один за другим с небольшой задержкой между показом. Это предотвращает подвисание браузера при отображении большого количества облака тегов. По умолчанию delayedMode true, если количество тегов более 50.
+shape (string): Форма облака тегов. По умолчанию —  elliptic, но параметр может быть установлен как rectangular для отображения облака тегов прямоугольной формы.
+     */
+</script>
+

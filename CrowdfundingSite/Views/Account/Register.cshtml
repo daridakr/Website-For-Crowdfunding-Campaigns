@@ -1,0 +1,93 @@
+﻿@model RegisterViewModel
+<div class="container pt-lg-7" style="padding-top: 3rem !important;">
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card bg-secondary shadow border-0">
+                <div class="card-header bg-white pb-5" style="padding-bottom: 1.5rem !important;">
+                    <div class="text-muted text-center mb-3"><small>Зарегистрируйтесь с помощью</small></div>
+                    <div class="btn-wrapper text-center">
+                        <a href="#" class="btn btn-neutral btn-icon">
+                            <span class="btn-inner--icon"><img src="~/img/icons/common/facebook.svg" /></span>
+                            <span class="btn-inner--text">Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn-neutral btn-icon">
+                            <span class="btn-inner--icon"><img src="~/img/icons/common/google.svg" /></span>
+                            <span class="btn-inner--text">Google</span>
+                        </a>
+                    </div>
+                    <br />
+                    <div class="btn-wrapper text-center">
+                        <a href="#" class="btn btn-neutral btn-icon">
+                            <span class="btn-inner--icon"><img src="~/img/icons/common/vk.svg" /></span>
+                            <span class="btn-inner--text">ВКонтакте</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body px-lg-5 py-lg-5" style="padding-bottom: 1rem !important;">
+                    <div class="text-center text-muted mb-4">
+                        <small>Или используя учетную запись</small>
+                    </div>
+                    <form asp-area="" asp-controller="Account" asp-action="Register" method="post">
+                        <div asp-validation-summary="All"></div>
+                        <div class="form-group">
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                </div>
+                                <input asp-for="Email" class="form-control" placeholder="Email" type="email">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input asp-for="UserName" class="form-control" placeholder=" Логин" />
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input asp-for="UserSurname" class="form-control" placeholder="Имя и фамилия" />
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <div class="input-group input-group-alternative">
+                                <input asp-for="BirthDay" type="date" placeholder="Дата рождения" class="form-control" id="exampleFormControlInput1" placeholder="" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 0px;height: 43px; color: #1f2d3d !important">
+                            </div>
+                        </div>
+                        <div class="form-group focused">
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                </div>
+                                <input asp-for="Password" class="form-control" placeholder=" Пароль" type="password" />
+                            </div>
+                        </div>
+                        <div class="form-group focused">
+                            <div class="input-group input-group-alternative">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                </div>
+                                <input asp-for="PasswordConfirm" class="form-control" placeholder=" Подтвердите пароль" type="password" />
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-primary my-4" value="Зарегистрироваться" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-3" style="margin-top: .5rem !important;">
+                <div class="col-6">
+                    <a class="text-light"><small>Уже есть аккаунт?</small></a>
+                </div>
+                <div class="col-6 text-right">
+                    <a href="#" class="text-light"><small>Войти</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

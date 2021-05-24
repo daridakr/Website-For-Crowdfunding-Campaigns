@@ -1,0 +1,18 @@
+[
+  {
+    "outputFileName": "wwwroot/js/core/scripts.js",
+    "inputFiles": [
+      "wwwroot/js/core/jquery.min.js",
+      "wwwroot/js/core/bootstrap.min.js",
+      "wwwroot/js/core/popper.min.js",
+      "wwwroot/js/plugins/perfect-scrollbar.jquery.min.js",
+      "wwwroot/js/plugins/bootstrap-switch.js",
+      "wwwroot/js/plugins/nouislider.min.js",
+      "wwwroot/js/plugins/datetimepicker.js",
+      "wwwroot/js/plugins/bootstrap-datepicker.min.js",
+      "wwwroot/js/argon-design-system.min.js?v=1.2.2",
+      "wwwroot/js/plugins/bootstrap-datepicker.min.js",
+      "wwwroot/js/plugins/bootstrap-datepicker.min.js"
+    ]
+  }
+]
