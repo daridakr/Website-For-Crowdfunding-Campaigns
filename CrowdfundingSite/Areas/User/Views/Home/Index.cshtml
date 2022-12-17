@@ -1,7 +1,226 @@
 ﻿@model EntitiesViewModel
 @{
-    string strTitle = "Аккаунт";
+    string strTitle = "Управление аккаунтом";
     ViewBag.Title = strTitle;
 }
 
-<h1>@strTitle</h1>
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/search-list.css">
+
+<div>
+    <div class="col-md-8 mx-auto text-center">
+        <h3 class="display-4" style="color: white">@strTitle</h3>
+    </div>
+    <div class="col-md-8 mx-auto">
+        <img src="..." alt="..." class="img-thumbnail">
+    </div>
+    <div class="col-md-8 mx-auto text-center">
+        <div class="nav-wrapper">
+            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                <li class="nav-item">
+                    <a class="btn btn-warning btn-icon mt-3 mb-sm-0 mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true" style="font-weight: 100; width: 270px; text-transform:none"><i class="ni ni-bullet-list-67 mr-2"></i>Созданные кампании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-warning btn-icon mt-3 mb-sm-0 mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false" style="font-weight: 100; width: 270px; text-transform:none"><i class="ni ni-notification-70 mr-2"></i>Поддерживаемые кампании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-warning btn-icon mt-3 mb-sm-0 mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false" style="font-weight: 100; width: 270px; text-transform:none"><i class="ni ni-money-coins mr-2"></i>Список бонусов</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <!-- Созданные кампании -->
+                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                        <div class="bd-example">
+                            <div class="text-left">
+                                <button class="btn btn-primary btn-sm" style="background-color: #fb6340; border-color: #fb6340; margin-right: 0px; text-align: left !important; margin: 0px 0px 10px 0px;">Сортировка</button>
+                                <a asp-controller="CampaignItems" asp-action="Edit" asp-route-id="">
+                                    <button class="btn btn-primary btn-sm" style=" margin: 0px 0px 10px 0px; background-color: #fb6340; border-color: #fb6340">Создать кампанию</button>
+                                </a>
+                            </div>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти..." style="text-align: center !important">
+                        </div>
+                        <!--список кампаний-->
+                        <div class="list-group">
+                            @if (Model.Campaigns.Any())
+                            {
+                                @foreach (Campaign entity in Model.Campaigns)
+                                {
+                                    <div>
+
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <div class="col-lg-6" style="text-align: left">
+                                                    <h5 class="mb-1">@entity.Title</h5>
+                                                </div>
+                                                <div class="col-lg-6" style="text-align: right">
+                                                    <small>@entity.DateAdded</small><br />
+                                                    <small>@entity.EndDate</small><br />
+                                                    @{
+                                                        string creator = @Model.Users.Where(user => user.Id == @entity.CreatorId).Select(user => user.UserName).First();
+                                                    }
+                                                    <small>@creator</small>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1">@entity.Subtitle</p>
+                                            @{ string title = @Model.Subjects.Where(sub => sub.Id == @entity.ThemeId).Select(sub => sub.Title).First(); }
+
+                                            <small>@title</small>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="CampaignItems" asp-action="Delete" method="post">
+                                            <input type="hidden" name="id" value="@entity.Id">
+                                            <button href="#" onclick="document.getElementById('form-@entity.Id').submit();" type="button" class="btn btn-sm btn-danger btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Удалить</button>
+                                        </form>
+                                        <a asp-area="Admin" asp-controller="CampaignItems" asp-action="Edit" asp-route-id="@entity.Id">
+                                            <button type="button" class="btn btn-sm btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Редактировать</button>
+                                        </a>
+                                    </div>
+                                    <br />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <!-- Поддерживаемые кампании -->
+                    <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                        <!-- Панель управления -->
+                        <div class="bd-example">
+                            <div class="text-left">
+                                <button class="btn btn-primary btn-sm" style="background-color: #fb6340; border-color: #fb6340; margin-right: 0px; text-align: left !important; margin: 0px 0px 10px 0px;">Сортировка</button>
+                                <a asp-controller="CampaignItems" asp-action="Edit" asp-route-id="">
+                                    <button class="btn btn-primary btn-sm" style=" margin: 0px 0px 10px 0px; background-color: #fb6340; border-color: #fb6340">Создать кампанию</button>
+                                </a>
+                            </div>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти..." style="text-align: center !important">
+                        </div>
+                        <!--список кампаний-->
+                        <div class="list-group">
+                            @if (Model.Campaigns.Any())
+                            {
+                                @foreach (Campaign entity in Model.Campaigns)
+                                {
+                                    <div>
+
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <div class="col-lg-6" style="text-align: left">
+                                                    <h5 class="mb-1">@entity.Title</h5>
+                                                </div>
+                                                <div class="col-lg-6" style="text-align: right">
+                                                    <small>@entity.DateAdded</small><br />
+                                                    <small>@entity.EndDate</small><br />
+                                                    @{
+                                                        string creator = @Model.Users.Where(user => user.Id == @entity.CreatorId).Select(user => user.UserName).First();
+                                                    }
+                                                    <small>@creator</small>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1">@entity.Subtitle</p>
+                                            @{ string title = @Model.Subjects.Where(sub => sub.Id == @entity.ThemeId).Select(sub => sub.Title).First(); }
+
+                                            <small>@title</small>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="CampaignItems" asp-action="Delete" method="post">
+                                            <input type="hidden" name="id" value="@entity.Id">
+                                            <button href="#" onclick="document.getElementById('form-@entity.Id').submit();" type="button" class="btn btn-sm btn-danger btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Удалить</button>
+                                        </form>
+                                        <a asp-area="Admin" asp-controller="CampaignItems" asp-action="Edit" asp-route-id="@entity.Id">
+                                            <button type="button" class="btn btn-sm btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Редактировать</button>
+                                        </a>
+                                    </div>
+                                    <br />
+                                }
+                            }
+                        </div>
+                    </div>
+                    <!-- Список бонусов -->
+                    <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                        <!-- Панель управления -->
+                        <div class="bd-example">
+                            <div class="text-left">
+                                <button class="btn btn-primary btn-sm" style="background-color: #fb6340; border-color: #fb6340; margin-right: 0px; text-align: left !important; margin: 0px 0px 10px 0px;">Сортировка</button>
+                                <a asp-controller="CampaignItems" asp-action="Edit" asp-route-id="">
+                                    <button class="btn btn-primary btn-sm" style=" margin: 0px 0px 10px 0px; background-color: #fb6340; border-color: #fb6340">Создать кампанию</button>
+                                </a>
+                            </div>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Найти..." style="text-align: center !important">
+                        </div>
+                        <!--список кампаний-->
+                        <div class="list-group">
+                            @if (Model.Campaigns.Any())
+                            {
+                                @foreach (Campaign entity in Model.Campaigns)
+                                {
+                                    <div>
+
+                                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                            <div class="d-flex w-100 justify-content-between">
+                                                <div class="col-lg-6" style="text-align: left">
+                                                    <h5 class="mb-1">@entity.Title</h5>
+                                                </div>
+                                                <div class="col-lg-6" style="text-align: right">
+                                                    <small>@entity.DateAdded</small><br />
+                                                    <small>@entity.EndDate</small><br />
+                                                    @{
+                                                        string creator = @Model.Users.Where(user => user.Id == @entity.CreatorId).Select(user => user.UserName).First();
+                                                    }
+                                                    <small>@creator</small>
+                                                </div>
+                                            </div>
+                                            <p class="mb-1">@entity.Subtitle</p>
+                                            @{ string title = @Model.Subjects.Where(sub => sub.Id == @entity.ThemeId).Select(sub => sub.Title).First(); }
+
+                                            <small>@title</small>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <form style="display: inline-block;" id="form-@entity.Id" asp-area="Admin" asp-controller="CampaignItems" asp-action="Delete" method="post">
+                                            <input type="hidden" name="id" value="@entity.Id">
+                                            <button href="#" onclick="document.getElementById('form-@entity.Id').submit();" type="button" class="btn btn-sm btn-danger btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Удалить</button>
+                                        </form>
+                                        <a asp-area="Admin" asp-controller="CampaignItems" asp-action="Edit" asp-route-id="@entity.Id">
+                                            <button type="button" class="btn btn-sm btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Редактировать</button>
+                                        </a>
+                                    </div>
+                                    <br />
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+            <input type="submit" class="btn btn-warning btn-icon mt-3 mb-sm-0" value="Выйти" />
+        </form>
+    </center>
+</div>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>

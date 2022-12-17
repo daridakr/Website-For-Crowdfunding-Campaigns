@@ -26,12 +26,12 @@ namespace CrowdfundingSite.Areas.Admin.Controllers
             return View(bonus);
         }
 
-        [HttpPost]
-        public ActionResult Create(Bonus bonus, Guid campaignId)
-        {
-            bonus.CampaignId = campaignId;
-            dataManager.BonusItems.SaveBonus(bonus);
-            return View();
-        }
+        //[HttpPost]
+        //public ActionResult Create(Bonus bonus, Guid campaignId)
+        //{
+        //    bonus.CampaignId = campaignId;
+        //    dataManager.BonusItems.SaveBonus(bonus);
+        //    return View();
+        //}
     }
 }

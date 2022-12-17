@@ -296,13 +296,13 @@ namespace CrowdfundingSite.Migrations
                             Id = "a19e0bd9-aea5-4170-9e52-8a4903564910",
                             AccessFailedCount = 0,
                             BirthDay = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ConcurrencyStamp = "b52c6dc5-a557-4b0a-a5ab-d9a4dcf69759",
+                            ConcurrencyStamp = "607d67c1-5939-4337-80c6-f46e527588ac",
                             Email = "crowdfuncamp@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "CROWDFUNCAMP@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAED8CHsvaUvpt2OqbKZjhV00vjpBACJMhwhxYRzSK9jtAG+/vqVtUdN/Mo4yipzRkBA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMhBUBzUqeB6OxQSCJm5H6C8d6Ik4RREQoeZIPgJWqpFMPG6g/mRU/MoO8eN8HtRnA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -354,6 +354,31 @@ namespace CrowdfundingSite.Migrations
                     b.HasIndex("CampaignId");
 
                     b.ToTable("News");
+                });
+
+            modelBuilder.Entity("CrowdfundingSite.Domain.Entities.Rating", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CampaignId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CrowdUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Stars")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CampaignId");
+
+                    b.HasIndex("CrowdUserId");
+
+                    b.ToTable("Ratings");
                 });
 
             modelBuilder.Entity("CrowdfundingSite.Domain.Entities.Subject", b =>
@@ -440,14 +465,14 @@ namespace CrowdfundingSite.Migrations
                         new
                         {
                             Id = "5207a125-9669-4216-8b8f-9b7bad955cd7",
-                            ConcurrencyStamp = "d5de16f3-5afb-4656-abee-439f18db9c23",
+                            ConcurrencyStamp = "445e98c8-9f47-4d9a-a1e8-4827b73cdc54",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = "fbae22d3-d74c-4ec5-9212-512965d5cd86",
-                            ConcurrencyStamp = "9b7d12d5-f50b-44bc-a931-bd468b386ad4",
+                            ConcurrencyStamp = "23c077f6-3ecc-4941-8547-9c57c9d2b19d",
                             Name = "user",
                             NormalizedName = "USER"
                         });
@@ -654,6 +679,25 @@ namespace CrowdfundingSite.Migrations
                     b.Navigation("Campaign");
                 });
 
+            modelBuilder.Entity("CrowdfundingSite.Domain.Entities.Rating", b =>
+                {
+                    b.HasOne("CrowdfundingSite.Domain.Entities.Campaign", "Campaign")
+                        .WithMany("Ratings")
+                        .HasForeignKey("CampaignId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CrowdfundingSite.Domain.Entities.CrowdUser", "CrowdUser")
+                        .WithMany("Ratings")
+                        .HasForeignKey("CrowdUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Campaign");
+
+                    b.Navigation("CrowdUser");
+                });
+
             modelBuilder.Entity("CrowdfundingSite.Domain.Images.CampaignImage", b =>
                 {
                     b.HasOne("CrowdfundingSite.Domain.Entities.Campaign", "Campaign")
@@ -725,6 +769,8 @@ namespace CrowdfundingSite.Migrations
                     b.Navigation("Images");
 
                     b.Navigation("News");
+
+                    b.Navigation("Ratings");
                 });
 
             modelBuilder.Entity("CrowdfundingSite.Domain.Entities.CrowdUser", b =>
@@ -732,6 +778,8 @@ namespace CrowdfundingSite.Migrations
                     b.Navigation("Campaignes");
 
                     b.Navigation("Comments");
+
+                    b.Navigation("Ratings");
                 });
 
             modelBuilder.Entity("CrowdfundingSite.Domain.Entities.Subject", b =>

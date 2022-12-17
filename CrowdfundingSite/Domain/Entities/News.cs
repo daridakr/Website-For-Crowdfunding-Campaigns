@@ -10,7 +10,6 @@ namespace CrowdfundingSite.Domain.Entities
     {
         [Required]
         public Guid CampaignId { get; set; }
-        [Required]
         public Campaign Campaign { get; set; }
 
         [Required(ErrorMessage = "Введите заголовок")]

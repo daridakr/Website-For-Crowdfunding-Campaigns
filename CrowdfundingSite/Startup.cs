@@ -47,6 +47,8 @@ namespace CrowdfundingSite
             services.AddTransient<ITagsRepository, EFTagsRepository>();
             services.AddTransient<ISubjectsRepository, EFSubjectsRepository>();
             services.AddTransient<ICampaignImagesRepository, EFCampaignImagesRepository>();
+            services.AddTransient<IRatingRepository, EFRatingRepository>();
+            services.AddTransient<IUserService, UserService>();
             services.AddSingleton<ICloudStorage, CloudinaryStorage>();
             services.AddTransient<DataManager>();
             // в рамках одного http запроса может быть создано сколько угодно объектов (репозиториев)
@@ -63,6 +65,7 @@ namespace CrowdfundingSite
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireDigit = true;
+                options.SignIn.RequireConfirmedEmail = false;
             }).AddEntityFrameworkStores<Domain.DbContext>().AddDefaultTokenProviders();
 
             // настраиваем authentication cookie
@@ -139,6 +142,7 @@ namespace CrowdfundingSite
                 app.UseHsts();
             }
 
+            // компоненты middleware
             // обработка ошибок HTTP
             app.UseStatusCodePages();
             // перенаправляет все запросы HTTP на HTTPS

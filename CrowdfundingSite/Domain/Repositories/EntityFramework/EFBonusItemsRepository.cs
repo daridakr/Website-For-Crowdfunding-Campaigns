@@ -13,19 +13,22 @@ namespace CrowdfundingSite.Domain.Repositories.EntityFramework
         private readonly DbContext context;
         public EFBonusItemsRepository(DbContext context) => this.context = context;
 
-        public IQueryable<Bonus> GetAllBonuses(Guid campaignId)
+        public IEnumerable<Bonus> GetAllBonuses(Guid campaignId)
         {
-            return (IQueryable<Bonus>)context.Bonuses.FirstOrDefault(x => x.CampaignId == campaignId);
+            IEnumerable<Bonus> bonuses = from i in context.Bonuses.AsQueryable()
+                                     where i.CampaignId == campaignId
+                                     select i;
+            return bonuses;
         }
         public Bonus GetBonusById(Guid id)
         {
             return context.Bonuses.FirstOrDefault(x => x.Id == id);
         }
-        public void SaveBonus(Bonus entity)
+        public async Task<Bonus> Add(Bonus bonus)
         {
-            if (entity.Id == default) context.Entry(entity).State = EntityState.Added;
-            else context.Entry(entity).State = EntityState.Modified;
-            context.SaveChanges();
+            context.Add(bonus);
+            await context.SaveChangesAsync();
+            return bonus;
         }
         public void DeleteBonus(Guid id)
         {

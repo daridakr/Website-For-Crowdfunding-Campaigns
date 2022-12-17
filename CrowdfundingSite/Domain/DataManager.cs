@@ -17,6 +17,7 @@ namespace CrowdfundingSite.Domain
         public ITagsRepository Tags { get; set; }
         public ISubjectsRepository Subjects { get; set; }
         public ICampaignImagesRepository CampaignImages { get; set; }
+        public IRatingRepository Rating { get; set; }
 
 
         public DataManager(IСampaignItemsRepository campaignItemsRepository,
@@ -26,7 +27,8 @@ namespace CrowdfundingSite.Domain
             IBonusItemsRepository bonusItemsRepository,
             ISubjectsRepository subjectsRepository,
             ITagsRepository tagsRepository,
-            ICampaignImagesRepository campaignImages)
+            ICampaignImagesRepository campaignImages,
+            IRatingRepository rating )
         {
             СampaignItems = campaignItemsRepository;
             Users = usersRepository;
@@ -36,6 +38,7 @@ namespace CrowdfundingSite.Domain
             Tags = tagsRepository;
             Subjects = subjectsRepository;
             CampaignImages = campaignImages;
+            Rating = rating;
         }
     }
 }

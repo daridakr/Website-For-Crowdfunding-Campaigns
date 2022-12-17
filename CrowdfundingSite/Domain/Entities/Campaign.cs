@@ -3,6 +3,7 @@ using CrowdfundingSite.Service.Attributes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -36,6 +37,8 @@ namespace CrowdfundingSite.Domain.Entities
 
         [Display(Name = "Галерея изображений")]
         public ICollection<CampaignImage> Images { get; set; }
+
+        public ICollection<Rating> Ratings { get; set; }
 
         [Required]
         [Display(Name = "Целевая сумма денег")]

@@ -1,0 +1,175 @@
+﻿@model BonusViewModel
+@{
+    string strTitle = "Создание бонуса";
+    ViewBag.Title = strTitle;
+}
+
+<link rel="stylesheet" href="/css/tagify.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/jQuery.tagify.min.js"></script>
+<script src="~/js/ckeditor/ckeditor.js"></script>
+<link rel="stylesheet" href="~/css/DragDrop.css" />
+
+<div>
+    <center>
+        <div class="col-md-10 mx-auto text-center">
+            <h3 class="display-4" style="color: white">@strTitle</h3>
+            <form asp-controller="Bonuses" asp-action="Add" method="post" enctype="multipart/form-data">
+                <div class="row" style="display:initial;">
+                    <input type="hidden" asp-for="Campaign.Id" readonly hidden/>
+
+                    <div asp-validation-summary="All"></div>
+                    <div class="text-center">
+                        <!-- название -->
+                        <div class="form-group">
+                            <input asp-for="Bonus.Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название бонуса" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px; color: #1f2d3d !important">
+                            <span asp-validation-for="Bonus.Title" style="color: red !important"></span>
+                        </div>
+                        <!-- описание -->
+                        <div class="input-group mb-3">
+                            <textarea asp-for="Bonus.Text" maxlength="300" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Описание" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px; resize: none; color: #1f2d3d !important"></textarea>
+                            <span asp-validation-for="Bonus.Text" style="color: red !important"></span>
+                        </div>
+                        <!-- стоимость -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01" style="color: #1f2d3d !important">Сумма перевода (руб.)</label>
+                            </div>
+                            <input asp-for="Bonus.TransferAmount" type="text" data-type="number" maxlength="10" class="form-control" id="exampleFormControlInput1" placeholder="руб." style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 0px;height: 43px; color: #1f2d3d !important">
+                            <span asp-validation-for="Bonus.TransferAmount" style="color: red !important"></span>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-warning btn-icon mt-3 mb-sm-0" value="Создать" />
+            </form>
+        </div>
+    </center>
+    <div>
+    </div>
+</div>
+
+@section Scripts
+{
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/jquery1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        let dropArea = document.getElementById('drop-area')
+        let filesDone = 0
+        let filesToDo = 0
+        let progressBar = document.getElementById('progress-bar')
+
+            ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false)
+            })
+
+        function preventDefaults(e) {
+            e.preventDefault()
+            e.stopPropagation()
+        }
+
+        ;['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, highlight, false)
+        })
+            ;['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false)
+            })
+
+        // подсвечивание области
+        function highlight(e) {
+            dropArea.classList.add('highlight')
+        }
+        function unhighlight(e) {
+            dropArea.classList.remove('highlight')
+        }
+
+        // получение данных о файлах,
+        dropArea.addEventListener('drop', handleDrop, false)
+        function handleDrop(e) {
+            let dt = e.dataTransfer
+            let files = dt.files //FileList
+
+            document.getElementById('Pictures').files = files;
+
+            handleFiles(files)
+        }
+
+        // преобразование FileList в массив
+        function handleFiles(files) {
+            files = [...files]
+            initializeProgress(files.length)
+            files.forEach(uploadFile)
+            files.forEach(previewFile)
+        }
+
+        function uploadFile(file) {
+            let formData = new FormData()
+
+            formData.append('file', file)
+
+            fetch({
+                method: 'POST',
+                body: formData
+            })
+                .then(progressDone)
+                .then(() => { /* Готово. Информируем пользователя */ })
+                .catch(() => { /* Ошибка. Информируем пользователя */ })
+        }
+
+        function previewFile(file) {
+            let reader = new FileReader()
+            reader.readAsDataURL(file)
+            reader.onloadend = function () {
+                let img = document.createElement('img')
+                img.src = reader.result
+                document.getElementById('gallery').appendChild(img)
+            }
+        }
+
+        function initializeProgress(numfiles) {
+            progressBar.value = 0
+            filesDone = 0
+            filesToDo = numfiles
+        }
+        function progressDone() {
+            filesDone++
+            progressBar.value = filesDone / filesToDo * 100
+        }
+    </script>
+}
+
+<style>
+    #drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 20px;
+        width: 480px;
+        font-family: sans-serif;
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+        #drop-area.highlight {
+            border-color: purple;
+        }
+
+    p {
+        margin-top: 0;
+    }
+
+    .my-form {
+        margin-bottom: 10px;
+    }
+
+    #gallery {
+        margin-top: 10px;
+    }
+
+        #gallery img {
+            width: 150px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+</style>
+
+

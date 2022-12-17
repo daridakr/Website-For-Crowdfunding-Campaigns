@@ -69,7 +69,7 @@
                                 <input name="bootstrap-tagify-dropdown" class="some_class_name" placeholder="Напишите несколько тегов..." value="css, html, javascript">
                             </div>
                         </div>-->
-                            <!-- Видео -->
+                        <!-- Видео -->
                         <div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -95,67 +95,67 @@
                                 <span asp-validation-for="EndDate" style="color: red !important"></span>
                             </div>
                             <!-- Бонусы -->
-        <!--<div class="form-group">
-            <h3 class="h-50" style="color: white; font-size: 20px; height: 20% !important;">Бонусы</h3>
-            <input data-toggle="modal" data-target="#tagModal" value="Добавить" class="btn btn-warning btn-icon mt-3 mb-sm-0" name="AddBonus" id="Bonus" style="text-align: center !important">
-            @if (Model.Bonuses.Any())
-            {
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th class="text-center">ID</th>
-                            <th>Название</th>
-                            <th>Описание</th>
-                            <th>Сумма</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            @foreach (Bonus bonus in Model.Bonuses)
-                            {
-                                <td class="text-center">@bonus.Title</td>
-                                <td>@bonus.Text</td>
-                                <td>@bonus.TransferAmount.ToString("C")</td>
-                                <td class="td-actions text-right">
-                                    <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm " data-original-title="" title="Удалить пользователя">
-                                        <i class="ni ni-fat-remove pt-1"></i>
-                                    </button>
-                                </td>
+                            <!--<div class="form-group">
+                                <h3 class="h-50" style="color: white; font-size: 20px; height: 20% !important;">Бонусы</h3>
+                                <input data-toggle="modal" data-target="#tagModal" value="Добавить" class="btn btn-warning btn-icon mt-3 mb-sm-0" name="AddBonus" id="Bonus" style="text-align: center !important">
+                                @if (Model.Bonuses.Any())
+                                {
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">ID</th>
+                                                <th>Название</th>
+                                                <th>Описание</th>
+                                                <th>Сумма</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                @foreach (Bonus bonus in Model.Bonuses)
+                                                {
+                                                    <td class="text-center">@bonus.Title</td>
+                                                    <td>@bonus.Text</td>
+                                                    <td>@bonus.TransferAmount.ToString("C")</td>
+                                                    <td class="td-actions text-right">
+                                                        <button type="button" rel="tooltip" class="btn btn-danger btn-icon btn-sm " data-original-title="" title="Удалить пользователя">
+                                                            <i class="ni ni-fat-remove pt-1"></i>
+                                                        </button>
+                                                    </td>
 
-                            }
-                        </tr>
-                    </tbody>
-                </table>
-            }
-            </div>-->
-                                <!-- Bonus Modal -->
-                                <!--<div class="modal fade" id="tagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Создание бонуса</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form asp-area="Admin" asp-controller="Bonuses" asp-action="Create" method="post" enctype="multipart/form-data">
-                                                    <input type="hidden" asp-for="Bonus.Id" />
-                                                    <input type="hidden" asp-for="Bonus.CampaignId" value="@Model.Id" name="campaignId"/>
-                                                    <input type="hidden" asp-for="Bonus.DateAdded" />
-                                                    <input asp-for="Bonus.Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px">
-                                                    <input asp-for="Bonus.Text" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Описание" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px">
-                                                    <input asp-for="Bonus.TransferAmount" type="text" data-type="number" maxlength="10" class="form-control" id="exampleFormControlInput1" placeholder="Сумма перевода" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 0px;height: 43px; color: #1f2d3d !important">
-                                                    <input type="submit" class="btn btn-warning btn-icon" value="Создать" />
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-                                            </div>
+                                                }
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                }
+                                </div>-->
+                            <!-- Bonus Modal -->
+                            <!--<div class="modal fade" id="tagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Создание бонуса</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form asp-area="Admin" asp-controller="Bonuses" asp-action="Create" method="post" enctype="multipart/form-data">
+                                                <input type="hidden" asp-for="Bonus.Id" />
+                                                <input type="hidden" asp-for="Bonus.CampaignId" value="@Model.Id" name="campaignId"/>
+                                                <input type="hidden" asp-for="Bonus.DateAdded" />
+                                                <input asp-for="Bonus.Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px">
+                                                <input asp-for="Bonus.Text" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Описание" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px">
+                                                <input asp-for="Bonus.TransferAmount" type="text" data-type="number" maxlength="10" class="form-control" id="exampleFormControlInput1" placeholder="Сумма перевода" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 0px;height: 43px; color: #1f2d3d !important">
+                                                <input type="submit" class="btn btn-warning btn-icon" value="Создать" />
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
                                         </div>
                                     </div>
-                                </div>-->
+                                </div>
+                            </div>-->
                             <br />
                             <div class="form-group">
                                 <!-- Обложка -->
@@ -164,9 +164,9 @@
                                 <span asp-validation-for="CoverPath" style="color: red !important"></span>
                             </div>
                             <!--
-    <div>
-        <img class="img-block" src="@Url.Content(Model.CoverPath)" />
-    </div>-->
+                            <div>
+                                <img class="img-block" src="@Url.Content(Model.CoverPath)" />
+                            </div>-->
                             <div class="form-group">
                                 <!-- Изображения -->
                                 <div id="drop-area">
@@ -180,9 +180,9 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        <input type="submit" class="btn btn-warning btn-icon mt-3 mb-sm-0" value="Создать" />
-</form>
+                    </div>
+                    <input type="submit" class="btn btn-warning btn-icon mt-3 mb-sm-0" value="Создать" />
+            </form>
         </div>
     </center>
     <div>
@@ -210,72 +210,39 @@
     </div>
 </div>
 
-<script>
+@section Scripts
+{
+    <script>
     window.onload = function() {
         var newCKEdit = CKEDITOR.replace('@Html.IdFor(x=>x.Text)');
         newCKEdit.updateElement();
     }
-</script>
+    </script>
 
-<script>
-    var input = document.querySelector('input[name=bootstrap-tagify-dropdown]'),
-        // init Tagify script on the above inputs
-        tagify = new Tagify(input, {
-            whitelist: ["A# .NET", "A# (Axiom)", "A-0 System", "A+", "A++", "ABAP", "ABC", "ABC ALGOL", "ABSET", "ABSYS", "ACC", "Accent", "Ace DASL", "ACL2", "Avicsoft", "ACT-III", "Action!", "ActionScript", "Ada", "Adenine", "Agda",
-                "Agilent VEE", "Agora", "AIMMS", "Alef", "ALF", "ALGOL 58", "ALGOL 60", "ALGOL 68", "ALGOL W", "Alice", "Alma-0", "AmbientTalk", "Amiga E", "AMOS", "AMPL", "Apex (Salesforce.com)", "APL", "AppleScript", "Arc", "ARexx", "Argus", "AspectJ", "Assembly language", "ATS", "Ateji PX", "AutoHotkey", "Autocoder", "AutoIt", "AutoLISP / Visual LISP", "Averest", "AWK", "Axum",
-                "Active Server Pages", "ASP.NET", "B", "Babbage", "Bash", "BASIC", "bc", "BCPL", "BeanShell", "Batch (Windows/Dos)", "Bertrand", "BETA", "Bigwig", "Bistro", "BitC", "BLISS", "Blockly", "BlooP", "Blue", "Boo", "Boomerang", "Bourne shell (including bash and ksh)", "BREW", "BPEL", "B", "C--", "C++ – ISO/IEC 14882", "C# – ISO/IEC 23270", "C/AL", "Caché ObjectScript", "C Shell",
-                "Caml", "Cayenne", "CDuce", "Cecil", "Cesil", "Céu", "Ceylon", "CFEngine", "CFML", "Cg", "Ch", "Chapel", "Charity", "Charm", "Chef", "CHILL", "CHIP-8", "chomski", "ChucK", "CICS", "Cilk", "Citrine (programming language)", "CL (IBM)", "Claire", "Clarion", "Clean", "Clipper", "CLIPS", "CLIST", "Clojure", "CLU", "CMS-2", "COBOL – ISO/IEC 1989", "CobolScript – COBOL Scripting language", "Cobra", "CODE", "CoffeeScript", "ColdFusion", "COMAL", "Combined Programming Language (CPL)", "COMIT", "Common Intermediate Language (CIL)",
-                "Common Lisp (also known as CL)", "COMPASS", "Component Pascal", "Constraint Handling Rules (CHR)", "COMTRAN", "Converge", "Cool", "Coq", "Coral 66", "Corn", "CorVision", "COWSEL", "CPL", "CPL", "Cryptol", "csh", "Csound", "CSP", "CUDA", "Curl", "Curry", "Cybil", "Cyclone", "Cython", "Java", "Javascript", "M2001", "M4", "M#", "Machine code", "MAD (Michigan Algorithm Decoder)", "MAD/I", "Magik", "Magma", "make", "Maple", "MAPPER now part of BIS", "MARK-IV now VISION:BUILDER", "Mary", "MASM Microsoft Assembly x86", "MATH-MATIC", "Mathematica",
-                "MATLAB", "Maxima (see also Macsyma)", "Max (Max Msp – Graphical Programming Environment)", "Maya (MEL)", "MDL", "Mercury", "Mesa", "Metafont", "Microcode", "MicroScript", "MIIS", "Milk (programming language)", "MIMIC", "Mirah", "Miranda", "MIVA Script", "ML", "Model 204", "Modelica", "Modula", "Modula-2", "Modula-3", "Mohol", "MOO", "Mortran", "Mouse", "MPD", "Mathcad", "MSIL – deprecated name for CIL", "MSL", "MUMPS", "Mystic Programming L"],
-            maxTags: 10,
-            dropdown: {
-                maxItems: 20,
-                classname: "tags-look",
-                enabled: 0,
-                closeOnSelect: false
-            }
-        })
-</script>
+    <script>
+        var input = document.querySelector('input[name=bootstrap-tagify-dropdown]'),
+            // init Tagify script on the above inputs
+            tagify = new Tagify(input, {
+                whitelist: ["A# .NET", "A# (Axiom)", "A-0 System", "A+", "A++", "ABAP", "ABC", "ABC ALGOL", "ABSET", "ABSYS", "ACC", "Accent", "Ace DASL", "ACL2", "Avicsoft", "ACT-III", "Action!", "ActionScript", "Ada", "Adenine", "Agda",
+                    "Agilent VEE", "Agora", "AIMMS", "Alef", "ALF", "ALGOL 58", "ALGOL 60", "ALGOL 68", "ALGOL W", "Alice", "Alma-0", "AmbientTalk", "Amiga E", "AMOS", "AMPL", "Apex (Salesforce.com)", "APL", "AppleScript", "Arc", "ARexx", "Argus", "AspectJ", "Assembly language", "ATS", "Ateji PX", "AutoHotkey", "Autocoder", "AutoIt", "AutoLISP / Visual LISP", "Averest", "AWK", "Axum",
+                    "Active Server Pages", "ASP.NET", "B", "Babbage", "Bash", "BASIC", "bc", "BCPL", "BeanShell", "Batch (Windows/Dos)", "Bertrand", "BETA", "Bigwig", "Bistro", "BitC", "BLISS", "Blockly", "BlooP", "Blue", "Boo", "Boomerang", "Bourne shell (including bash and ksh)", "BREW", "BPEL", "B", "C--", "C++ – ISO/IEC 14882", "C# – ISO/IEC 23270", "C/AL", "Caché ObjectScript", "C Shell",
+                    "Caml", "Cayenne", "CDuce", "Cecil", "Cesil", "Céu", "Ceylon", "CFEngine", "CFML", "Cg", "Ch", "Chapel", "Charity", "Charm", "Chef", "CHILL", "CHIP-8", "chomski", "ChucK", "CICS", "Cilk", "Citrine (programming language)", "CL (IBM)", "Claire", "Clarion", "Clean", "Clipper", "CLIPS", "CLIST", "Clojure", "CLU", "CMS-2", "COBOL – ISO/IEC 1989", "CobolScript – COBOL Scripting language", "Cobra", "CODE", "CoffeeScript", "ColdFusion", "COMAL", "Combined Programming Language (CPL)", "COMIT", "Common Intermediate Language (CIL)",
+                    "Common Lisp (also known as CL)", "COMPASS", "Component Pascal", "Constraint Handling Rules (CHR)", "COMTRAN", "Converge", "Cool", "Coq", "Coral 66", "Corn", "CorVision", "COWSEL", "CPL", "CPL", "Cryptol", "csh", "Csound", "CSP", "CUDA", "Curl", "Curry", "Cybil", "Cyclone", "Cython", "Java", "Javascript", "M2001", "M4", "M#", "Machine code", "MAD (Michigan Algorithm Decoder)", "MAD/I", "Magik", "Magma", "make", "Maple", "MAPPER now part of BIS", "MARK-IV now VISION:BUILDER", "Mary", "MASM Microsoft Assembly x86", "MATH-MATIC", "Mathematica",
+                    "MATLAB", "Maxima (see also Macsyma)", "Max (Max Msp – Graphical Programming Environment)", "Maya (MEL)", "MDL", "Mercury", "Mesa", "Metafont", "Microcode", "MicroScript", "MIIS", "Milk (programming language)", "MIMIC", "Mirah", "Miranda", "MIVA Script", "ML", "Model 204", "Modelica", "Modula", "Modula-2", "Modula-3", "Mohol", "MOO", "Mortran", "Mouse", "MPD", "Mathcad", "MSIL – deprecated name for CIL", "MSL", "MUMPS", "Mystic Programming L"],
+                maxTags: 10,
+                dropdown: {
+                    maxItems: 20,
+                    classname: "tags-look",
+                    enabled: 0,
+                    closeOnSelect: false
+                }
+            })
+    </script>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="/jquery1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/jquery1.10.2/jquery.min.js"></script>
 
-
-<style>
-    #drop-area {
-        border: 2px dashed #ccc;
-        border-radius: 20px;
-        width: 480px;
-        font-family: sans-serif;
-        margin: 100px auto;
-        padding: 20px;
-    }
-
-        #drop-area.highlight {
-            border-color: purple;
-        }
-
-    p {
-        margin-top: 0;
-    }
-
-    .my-form {
-        margin-bottom: 10px;
-    }
-
-    #gallery {
-        margin-top: 10px;
-    }
-
-        #gallery img {
-            width: 150px;
-            margin-bottom: 10px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-</style>
-
-<script type="text/javascript">
+    <script type="text/javascript">
         let dropArea = document.getElementById('drop-area')
         let filesDone = 0
         let filesToDo = 0
@@ -357,4 +324,41 @@
             filesDone++
             progressBar.value = filesDone / filesToDo * 100
         }
-</script>
+    </script>
+}
+
+<style>
+    #drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 20px;
+        width: 480px;
+        font-family: sans-serif;
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+        #drop-area.highlight {
+            border-color: purple;
+        }
+
+    p {
+        margin-top: 0;
+    }
+
+    .my-form {
+        margin-bottom: 10px;
+    }
+
+    #gallery {
+        margin-top: 10px;
+    }
+
+        #gallery img {
+            width: 150px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+</style>
+
+

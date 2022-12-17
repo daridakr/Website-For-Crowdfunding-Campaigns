@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gAPM40azGSbfSxnQshkVjoUnfLXxeGodSxKr9MTVvGvFAPqF3N3opgTfje7xAWvNTkFwaHPiZfzVjMXNt6JsHg==",
+  "dgSpecHash": "h2ItxWo1xoqQHYZ1GwZIiHCWUt1mmxOXcqi2uPiyI/uf2uDrYlqTJYVRH8I95mY/6uKFdl6UpXG2hcbBBjxzKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\даша\\Documents\\CrowdfundingSite\\CrowdfundingSite\\CrowdfundingSite.csproj",
+  "projectFilePath": "C:\\Учёба\\Базы Данных\\Курсовая\\CrowdfundingSite — копия\\CrowdfundingSite\\CrowdfundingSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\даша\\.nuget\\packages\\cloudinarydotnet\\1.15.1\\cloudinarydotnet.1.15.1.nupkg.sha512",
     "C:\\Users\\даша\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

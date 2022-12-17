@@ -1,0 +1,117 @@
+﻿@model EntitiesViewModel
+@{
+    string strTitle = "Результат поиска";
+    ViewBag.Title = strTitle;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-5 mx-auto text-center mt-1">
+    <h3 class="display-4" style="color: white">@strTitle</h3>
+</div>
+<!-- Кампании -->
+
+@if (Model.Campaigns.Any())
+{
+    <div class="col-md-10 mx-auto text-center">
+        <div class="row">
+            @foreach (Campaign entity in Model.Campaigns)
+            {
+                <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
+                    <a href="/campaign/getcampaign/@entity.Id">
+                        <div class="card shadow" style="background-image: url(~/wwwroot/img/77.jpg); background-color: white">
+                            <img class="card-img-top" src="@entity.CoverPath" alt="Card image cap">
+                            <div class="card-body" style="">
+                                <div class="tab-content" id="myTabContent">
+                                    <div style="text-align: right">
+                                        @if (entity.AverageRating < 20.0) for (int i = 0; i < 5; i++)
+                                            {
+                                                <i class="fa fa-star"></i> }
+                                        else if (entity.AverageRating < 40.0)
+                                        { <i class="fa fa-star" style="color: #fb6340"></i> for (int i = 0; i < 5; i++)
+                                            {
+                                                <i class="fa fa-star"></i>
+                                            }
+                                        }
+                                        else if (entity.AverageRating < 60.0)
+                                        {
+                                            for (int i = 0; i < 2; i++)
+                                            {
+                                                <i class="fa fa-star" style="color: #fb6340"></i> }
+                                            for (int i = 0; i < 40; i++)
+                                            {
+                                                <i class="fa fa-star"></i>
+                                            }
+                                        }
+                                        else if (entity.AverageRating < 80.0)
+                                        {
+                                            for (int i = 0; i < 3; i++)
+                                            {
+                                                <i class="fa fa-star" style="color: #fb6340"></i> }
+                                            for (int i = 0; i < 2; i++)
+                                            {
+                                                <i class="fa fa-star"></i>
+                                            }
+                                        }
+                                        else if (entity.AverageRating < 100.0)
+                                        {
+                                            for (int i = 0; i < 4; i++)
+                                            {
+                                                <i class="fa fa-star" style="color: #fb6340"></i> }
+                                            <i class="fa fa-star"></i>
+                                        }
+                                        else if (entity.AverageRating == 100.0)
+                                        {
+                                            for (int i = 0; i < 5; i++)
+                                            {
+                                                <i class="fa fa-star" style="color: #fb6340"></i>}
+                                        }
+                                    </div>
+                                    <h5>@entity.Title</h5>
+                                    @{ string title = @Model.Subjects.Where(sub => sub.Id == @entity.ThemeId).Select(sub => sub.Title).First(); }
+                                    <h3 class="display-3" style="font-size:15px; color: #525f7f">@title</h3>
+                                    <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                                        <p class="description">@entity.Subtitle</p>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-6">
+                                            @*<div style="text-align: left">
+                                                    <span class="badge badge-pill badge-default text-uppercase">Default</span>
+                                                    <span class="badge badge-pill badge-default text-uppercase">Default</span>
+                                                    <span class="badge badge-pill badge-default text-uppercase">Default</span>
+                                                    <span class="badge badge-pill badge-default text-uppercase">Default</span>
+                                                </div>*@
+                                            <div style="text-align: left; margin-top: 10px">
+                                                @{ var percent = (entity.TotalMoneyAmount / entity.RequiredMoneyAmount) * 100;
+                                                    percent = Math.Round(percent); }
+                                                <h3 class="display-3" style="font-size:15px; color: #525f7f">Средний рейтинг @entity.AverageRating</h3>
+                                                <h3 class="display-3" style="font-size:15px; color: #525f7f">Завершено на @percent%</h3>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-5 mt-lg-0" style="">
+                                            @*<div style="text-align: right">
+                                                    <span class="badge badge-pill badge-default text-uppercase">Default</span>
+                                                    <span class="badge badge-pill badge-default text-uppercase">Default</span>
+                                                </div>*@
+                                            <div style="text-align: right; margin-top: 10px">
+                                                <h3 class="display-3" style="font-size:15px; color: #525f7f">Дата окончания @entity.EndDate.Date</h3>
+                                                <h3 class="display-3" style="font-size:15px; color: #525f7f">Собрано @entity.TotalMoneyAmount/@entity.RequiredMoneyAmount руб.</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br />
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    <center>
+        <h4 class="mb-0 mt-5 font-weight-light" style="color:white; font-size: 15px;">К сожалению, ничего не найдено</h4>
+    </center>
+}

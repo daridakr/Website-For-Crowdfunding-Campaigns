@@ -1,0 +1,248 @@
+﻿@model News
+@{
+    string strTitle = "Создание новости";
+    ViewBag.Title = strTitle;
+}
+
+<link rel="stylesheet" href="/css/tagify.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/jQuery.tagify.min.js"></script>
+<script src="~/js/ckeditor/ckeditor.js"></script>
+<link rel="stylesheet" href="~/css/DragDrop.css" />
+
+<div>
+    <center>
+        <div class="col-md-10 mx-auto text-center">
+            <h3 class="display-4" style="color: white">@strTitle</h3>
+            <form asp-controller="News" asp-action="Add" method="post" enctype="multipart/form-data">
+                <div class="row" style="display:initial;">
+                    <input type="hidden" asp-for="Id" value="@Model.Id" />
+                    <input type="hidden" asp-for="DateAdded" />
+                    <input type="hidden" asp-for="ImagePath" />
+                    <input type="hidden" asp-for="Campaign" value="@Model.Campaign"/>
+
+                    <div asp-validation-summary="All"></div>
+                    <div class="text-center">
+                        <!-- название -->
+                        <div class="form-group">
+                            <input asp-for="Title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Название кампании" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px;height: 43px; color: #1f2d3d !important">
+                            <span asp-validation-for="Title" style="color: red !important"></span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01" style="color: #1f2d3d !important">Кампания</label>
+                            </div>
+                            <select asp-for="CampaignId" asp-items="ViewBag.Campaigns" type="text" class="custom-select" id="inputGroupSelect01">
+                                <option selected="selected" disabled="disabled">Выберите кампанию</option>
+                            </select>
+                            <span asp-validation-for="CampaignId" style="color: red !important"></span>
+                        </div>
+                        <!-- Полное описание -->
+                        <div class="form-group">
+                            <textarea minlength="50" asp-for="Text" class="form-control" id="exampleFormControlTextarea1" rows="15" cols="15" placeholder="Содержание" style="background-color: #f4f5f7;border:medium;padding-left:2em;border-radius: 5px; width: 200%; color: #1f2d3d !important"></textarea>
+                            <span asp-validation-for="Text" style="color: red !important"></span>
+                        </div>
+                        <!-- Теги -->
+                        <!--<div class="form-group">
+            <div class="tagify-item">
+                <input name="bootstrap-tagify-dropdown" class="some_class_name" placeholder="Напишите несколько тегов..." value="css, html, javascript">
+            </div>
+        </div>-->
+                        <!-- Видео -->
+                        <div>
+
+                            <br />
+                            <div class="form-group">
+                                <!-- Обложка -->
+                                <h3 class="h-50" style="color: white; font-size: 20px; height: 20% !important;">Обложка кампании</h3>
+                                <input type="file" accept="image/*" class="btn btn-warning btn-icon mt-3 mb-sm-0" name="Cover" id="Cover" style="text-align: center !important">
+                                <span asp-validation-for="ImagePath" style="color: red !important"></span>
+                            </div>
+                            <!--
+            <div>
+                <img class="img-block" src="@Url.Content(Model.ImagePath)" />
+            </div>-->
+
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-warning btn-icon mt-3 mb-sm-0" value="Создать" />
+</form>
+        </div>
+    </center>
+    <div>
+
+        <!--
+        <div class="div-box">
+
+        </div>
+        <div class="div-box">
+            <label asp-for="MetaTitle"></label>
+            <input asp-for="MetaTitle" />
+            <span asp-validation-for="MetaTitle"></span>
+        </div>
+        <div class="div-box">
+            <label asp-for="MetaDescription"></label>
+            <input asp-for="MetaDescription" />
+            <span asp-validation-for="MetaDescription"></span>
+        </div>
+        <div class="div-box">
+            <label asp-for="MetaKeywords"></label>
+            <input asp-for="MetaKeywords" />
+            <span asp-validation-for="MetaKeywords"></span>
+        </div>
+        <input type="submit" value="Сохранить" />-->
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+    window.onload = function() {
+        var newCKEdit = CKEDITOR.replace('@Html.IdFor(x=>x.Text)');
+        newCKEdit.updateElement();
+    }
+    </script>
+
+    <script>
+        var input = document.querySelector('input[name=bootstrap-tagify-dropdown]'),
+            // init Tagify script on the above inputs
+            tagify = new Tagify(input, {
+                whitelist: ["A# .NET", "A# (Axiom)", "A-0 System", "A+", "A++", "ABAP", "ABC", "ABC ALGOL", "ABSET", "ABSYS", "ACC", "Accent", "Ace DASL", "ACL2", "Avicsoft", "ACT-III", "Action!", "ActionScript", "Ada", "Adenine", "Agda",
+                    "Agilent VEE", "Agora", "AIMMS", "Alef", "ALF", "ALGOL 58", "ALGOL 60", "ALGOL 68", "ALGOL W", "Alice", "Alma-0", "AmbientTalk", "Amiga E", "AMOS", "AMPL", "Apex (Salesforce.com)", "APL", "AppleScript", "Arc", "ARexx", "Argus", "AspectJ", "Assembly language", "ATS", "Ateji PX", "AutoHotkey", "Autocoder", "AutoIt", "AutoLISP / Visual LISP", "Averest", "AWK", "Axum",
+                    "Active Server Pages", "ASP.NET", "B", "Babbage", "Bash", "BASIC", "bc", "BCPL", "BeanShell", "Batch (Windows/Dos)", "Bertrand", "BETA", "Bigwig", "Bistro", "BitC", "BLISS", "Blockly", "BlooP", "Blue", "Boo", "Boomerang", "Bourne shell (including bash and ksh)", "BREW", "BPEL", "B", "C--", "C++ – ISO/IEC 14882", "C# – ISO/IEC 23270", "C/AL", "Caché ObjectScript", "C Shell",
+                    "Caml", "Cayenne", "CDuce", "Cecil", "Cesil", "Céu", "Ceylon", "CFEngine", "CFML", "Cg", "Ch", "Chapel", "Charity", "Charm", "Chef", "CHILL", "CHIP-8", "chomski", "ChucK", "CICS", "Cilk", "Citrine (programming language)", "CL (IBM)", "Claire", "Clarion", "Clean", "Clipper", "CLIPS", "CLIST", "Clojure", "CLU", "CMS-2", "COBOL – ISO/IEC 1989", "CobolScript – COBOL Scripting language", "Cobra", "CODE", "CoffeeScript", "ColdFusion", "COMAL", "Combined Programming Language (CPL)", "COMIT", "Common Intermediate Language (CIL)",
+                    "Common Lisp (also known as CL)", "COMPASS", "Component Pascal", "Constraint Handling Rules (CHR)", "COMTRAN", "Converge", "Cool", "Coq", "Coral 66", "Corn", "CorVision", "COWSEL", "CPL", "CPL", "Cryptol", "csh", "Csound", "CSP", "CUDA", "Curl", "Curry", "Cybil", "Cyclone", "Cython", "Java", "Javascript", "M2001", "M4", "M#", "Machine code", "MAD (Michigan Algorithm Decoder)", "MAD/I", "Magik", "Magma", "make", "Maple", "MAPPER now part of BIS", "MARK-IV now VISION:BUILDER", "Mary", "MASM Microsoft Assembly x86", "MATH-MATIC", "Mathematica",
+                    "MATLAB", "Maxima (see also Macsyma)", "Max (Max Msp – Graphical Programming Environment)", "Maya (MEL)", "MDL", "Mercury", "Mesa", "Metafont", "Microcode", "MicroScript", "MIIS", "Milk (programming language)", "MIMIC", "Mirah", "Miranda", "MIVA Script", "ML", "Model 204", "Modelica", "Modula", "Modula-2", "Modula-3", "Mohol", "MOO", "Mortran", "Mouse", "MPD", "Mathcad", "MSIL – deprecated name for CIL", "MSL", "MUMPS", "Mystic Programming L"],
+                maxTags: 10,
+                dropdown: {
+                    maxItems: 20,
+                    classname: "tags-look",
+                    enabled: 0,
+                    closeOnSelect: false
+                }
+            })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/jquery1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        let dropArea = document.getElementById('drop-area')
+        let filesDone = 0
+        let filesToDo = 0
+        let progressBar = document.getElementById('progress-bar')
+
+            ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, preventDefaults, false)
+            })
+
+        function preventDefaults(e) {
+            e.preventDefault()
+            e.stopPropagation()
+        }
+
+        ;['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, highlight, false)
+        })
+            ;['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, unhighlight, false)
+            })
+
+        // подсвечивание области
+        function highlight(e) {
+            dropArea.classList.add('highlight')
+        }
+        function unhighlight(e) {
+            dropArea.classList.remove('highlight')
+        }
+
+        // получение данных о файлах,
+        dropArea.addEventListener('drop', handleDrop, false)
+        function handleDrop(e) {
+            let dt = e.dataTransfer
+            let files = dt.files //FileList
+
+            document.getElementById('Pictures').files = files;
+
+            handleFiles(files)
+        }
+
+        // преобразование FileList в массив
+        function handleFiles(files) {
+            files = [...files]
+            initializeProgress(files.length)
+            files.forEach(uploadFile)
+            files.forEach(previewFile)
+        }
+
+        function uploadFile(file) {
+            let formData = new FormData()
+
+            formData.append('file', file)
+
+            fetch({
+                method: 'POST',
+                body: formData
+            })
+                .then(progressDone)
+                .then(() => { /* Готово. Информируем пользователя */ })
+                .catch(() => { /* Ошибка. Информируем пользователя */ })
+        }
+
+        function previewFile(file) {
+            let reader = new FileReader()
+            reader.readAsDataURL(file)
+            reader.onloadend = function () {
+                let img = document.createElement('img')
+                img.src = reader.result
+                document.getElementById('gallery').appendChild(img)
+            }
+        }
+
+        function initializeProgress(numfiles) {
+            progressBar.value = 0
+            filesDone = 0
+            filesToDo = numfiles
+        }
+        function progressDone() {
+            filesDone++
+            progressBar.value = filesDone / filesToDo * 100
+        }
+    </script>
+}
+
+<style>
+    #drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 20px;
+        width: 480px;
+        font-family: sans-serif;
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+        #drop-area.highlight {
+            border-color: purple;
+        }
+
+    p {
+        margin-top: 0;
+    }
+
+    .my-form {
+        margin-bottom: 10px;
+    }
+
+    #gallery {
+        margin-top: 10px;
+    }
+
+        #gallery img {
+            width: 150px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+</style>
+
+

@@ -1,5 +1,6 @@
 ﻿using CrowdfundingSite.Domain;
 using CrowdfundingSite.Domain.Entities;
+using CrowdfundingSite.Domain.Repositories.Abstract;
 using CrowdfundingSite.Models;
 using CrowdfundingSite.Service;
 using CrowdfundingSite.ViewModels;
@@ -12,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using IUserService = CrowdfundingSite.Service.IUserService;
 
 namespace CrowdfundingSite.Controllers
 {
@@ -22,11 +24,13 @@ namespace CrowdfundingSite.Controllers
         // менеджеры для ооперирования пользователями в базе данных
         private readonly UserManager<CrowdUser> userManager;
         private readonly SignInManager<CrowdUser> signInManager;
+        private readonly IUserService _userService;
 
-        public AccountController(UserManager<CrowdUser> userMgr, SignInManager<CrowdUser> signinMgr)
+        public AccountController(UserManager<CrowdUser> userMgr, SignInManager<CrowdUser> signinMgr, IUserService userService)
         {
             userManager = userMgr;
             signInManager = signinMgr;
+            _userService = userService;
         }
 
         public IActionResult Account()
@@ -39,6 +43,8 @@ namespace CrowdfundingSite.Controllers
             return RedirectToAction("Login", "Account");
         }
 
+        [Authorize(Roles = "admin, user")]
+        [AllowAnonymous]
         public IActionResult Begin()
         {
             if (User.Identity.IsAuthenticated)
@@ -139,6 +145,7 @@ namespace CrowdfundingSite.Controllers
                         return Redirect(returnUrl ?? "/");
                     }
                     else ModelState.AddModelError(nameof(LoginViewModel.UserName), "Вы ввели неверный пароль для данного логина");
+                    if (result.IsNotAllowed) ModelState.AddModelError("", "Email не подтверждён");
                 }
                 // иначе добавляем к модели ошибку
                 else ModelState.AddModelError(nameof(LoginViewModel.UserName), "Вы ввели неверный логин");
@@ -147,6 +154,7 @@ namespace CrowdfundingSite.Controllers
             return View(model);
         }
 
+        [AllowAnonymous]
         [HttpPost]
         [Authorize(Roles = "admin, user")]
         public async Task<IActionResult> Register(RegisterViewModel model)
@@ -158,11 +166,25 @@ namespace CrowdfundingSite.Controllers
                 var result = await userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    // установка куки
+                    //// генерируем токен для подтверждения регистрации
+                    //var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
+                    //if(!string.IsNullOrEmpty(token))
+                    //{
+
+                    //}
+                    //// создаем ссылку для подтверждения
+
+                    //var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId=user.Id, code=code }, protocol: HttpContext.Request.Scheme);
+                    //// отправка письма
+                    //await userManager.SetEmailAsync(user, $"Подтвердите регистрацию, перейдя по ссылке: <a href='{callbackUrl}'>link</a>");
+                    //return View("DisplayEmail");
+                    
+                     // установка куки
                     await signInManager.SignInAsync(user, false);
                     // установка роли
                     await userManager.AddToRoleAsync(user, Config.UserRoleName);
                     return RedirectToAction("Index", "Home");
+                     
                 }
                 else
                 {
@@ -175,6 +197,49 @@ namespace CrowdfundingSite.Controllers
             return View(model);
         }
 
+        //private async Task SendEmailConfirmationEmail(CrowdUser user, string token)
+        //{
+        //    UserEmailOptions 
+        //}
+
+        [Authorize(Roles = "admin, user")]
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult ChangePassword()
+        {
+            return View(new ChangePasswordModel());
+        }
+
+        [Authorize(Roles = "admin, user")]
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordModel model)
+        {
+            if (ModelState.IsValid) 
+            {
+                var result = await ChangePasswordAsync(model);
+                if (result.Succeeded)
+                {
+                    ViewBag.IsSuccess = true;
+                    ModelState.Clear();
+                    return View();
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+            return View(model);
+        }
+
+        private async Task<IdentityResult> ChangePasswordAsync(ChangePasswordModel model)
+        {
+            var userId = _userService.GetUserId();
+            var user = await userManager.FindByIdAsync(userId);
+            return await userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+        }
+
+        [Route("logout")]
         [Authorize]
         public async Task<IActionResult> Logout()
         {

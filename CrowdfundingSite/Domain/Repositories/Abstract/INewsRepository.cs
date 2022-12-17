@@ -8,7 +8,7 @@ namespace CrowdfundingSite.Domain.Repositories.Abstract
 {
     public interface INewsRepository
     {
-        IQueryable<News> GetAllNews(Guid campaignId);
+        IEnumerable<News> GetAllNews(Guid campaignId);
         News GetNewById(Guid id);
         void SaveNew(News entity);
         void DeleteNew(Guid id);

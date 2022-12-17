@@ -13,5 +13,7 @@ namespace CrowdfundingSite.Domain.Repositories.Abstract
         void SaveСampaign(Campaign entity);
         void DeleteСampaign(Guid id);
         int GetCountOfCampaigns();
+        List<Campaign> SearchCampaigns(string name);
+        Guid AddNewCampaign(Campaign model);
     }
 }

@@ -1,0 +1,425 @@
+﻿@using CrowdfundingSite.Domain.Images
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model CampaignViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    string sbor = "  Идёт сбор  ";
+    string hight = "  Высокий рейтинг  ";
+    string success = "  Успешный проект  ";
+    int cost = 30;
+}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+    <!-- Status -->
+    <div class="modal-footer justify-content-between">
+        <p class="description mr-auto" style="color: white">
+            @if (Model.Campaign.RequiredMoneyAmount != Model.Campaign.TotalMoneyAmount)
+            {
+                <span class="badge badge-warning"> </span>@sbor
+            }
+            @if (Model.Campaign.AverageRating >= 90)
+            {
+                <span class="badge badge-success"> </span>@hight
+            }
+            @if (Model.Campaign.TotalMoneyAmount >= Model.Campaign.RequiredMoneyAmount)
+            {
+                <span class="badge badge-success"> </span>@success
+            }
+        </p>
+        <div>
+            <p class="description" style="color: white">@Model.Campaign.DateAdded.ToString("d")-@Model.Campaign.EndDate.ToString("d")</p>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="row mt-0">
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+
+                    @for (int i = 0; i < Model.Campaign.Images.Count(); i++)
+                    {
+                        <li data-target="#carouselExampleIndicators" data-slide-to="@i" class="@(i == 0 ? "active" : "") "></li>
+                    }
+                </ol>
+                <div class="carousel-inner">
+                    @{
+                        List<CampaignImage> images = Model.Campaign.Images.ToList();
+                    }
+                    @for (int i = 0; i < Model.Campaign.Images.Count(); i++)
+                    {
+                        <div class="@(i == 0 ? "carousel-item active" : "carousel-item") ">
+                            <img class="d-block w-100" src="@images[i].ImagePath">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- Description -->
+        <div class="col-md-6">
+            <!-- Name -->
+            <div class="row">
+                <div class="col-sm-10 mb-sm-0">
+                    <h3 class="display-4" style="color: white">@Model.Campaign.Title</h3>
+                </div>
+                <div class="col-sm-1 mb-3 mb-sm-0">
+                    <h3 class="display-3" style="color: white"><span class="label primary">@Model.Campaign.AverageRating</span></h3>
+                </div>
+            </div>
+            <!-- Subject -->
+            <div class="row">
+                <div class="col-md-12 text-primary">
+                    <span class="label primary"> @Model.Campaign.Theme.Title </span>
+                </div>
+            </div>
+            <!-- Rating -->
+            <div class="row">
+                <div class="col-md-12">
+                    @inject Microsoft.AspNetCore.Identity.UserManager<CrowdUser> _userManager
+                    @{ string userId = _userManager.GetUserId(User);
+                        }
+                    @{
+                        var r = Model.Campaign.Ratings.Where(r => r.CrowdUserId == userId);
+
+                    }
+                    @if (!(r.Any()))
+                    {
+                        @if (Model.Campaign.AverageRating < 20.0)
+                        {
+                            for (int i = 0; i < 5; i++)
+                            {
+                                <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star"></i>
+                                </a>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 40.0)
+                        {
+                             <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="1">
+                                <i class="fa fa-star" style="color: #fb6340"></i>
+                             </a>
+                            for (int i = 1; i < 5; i++)
+                            {
+                                <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star"></i>
+                                </a>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 60.0)
+                        {
+                            for (int i = 0; i < 2; i++)
+                            {
+                                 <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star" style="color: #fb6340"></i>
+                                 </a>
+                            }
+                            for (int i = 2; i < 5; i++)
+                            {
+                                <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star"></i>
+                                </a>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 80.0)
+                        {
+                            for (int i = 0; i < 3; i++)
+                            {
+                                <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star" style="color: #fb6340"></i>
+                                </a>
+                            }
+                            for (int i = 3; i < 5; i++)
+                            {
+                                <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star"></i>
+                                </a>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 100.0)
+                        {
+                            for (int i = 0; i < 4; i++)
+                            {
+                                 <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star" style="color: #fb6340"></i>
+                                 </a>
+                            }
+                             <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="5">
+                            <i class="fa fa-star"></i>
+                             </a>
+                        }
+                        else if (Model.Campaign.AverageRating == 100.0)
+                        {
+                            for (int i = 0; i < 5; i++)
+                            {
+                                <a asp-controller="Campaign" asp-action="Rating" asp-route-campaignId="@Model.Campaign.Id" asp-route-starNum="@(i+1)">
+                                    <i class="fa fa-star" style="color: #fb6340"></i>
+                                </a>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        @if (Model.Campaign.AverageRating < 20.0) for (int i = 0; i < 5; i++)
+                            {
+                                <i class="fa fa-star"></i> }
+                        else if (Model.Campaign.AverageRating < 40.0)
+                        { <i class="fa fa-star" style="color: #fb6340"></i> for (int i = 0; i < 4; i++)
+                            {
+                                <i class="fa fa-star"></i>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 60.0)
+                        {
+                            for (int i = 0; i < 2; i++)
+                            {
+                                <i class="fa fa-star" style="color: #fb6340"></i> }
+                            for (int i = 0; i < 3; i++)
+                            {
+                                <i class="fa fa-star"></i>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 80.0)
+                        {
+                            for (int i = 0; i < 3; i++)
+                            {
+                                <i class="fa fa-star" style="color: #fb6340"></i> }
+                            for (int i = 0; i < 2; i++)
+                            {
+                                <i class="fa fa-star"></i>
+                            }
+                        }
+                        else if (Model.Campaign.AverageRating < 100.0)
+                        {
+                            for (int i = 0; i < 4; i++)
+                            {
+                                <i class="fa fa-star" style="color: #fb6340"></i> }
+                            <i class="fa fa-star"></i>
+                        }
+                        else if (Model.Campaign.AverageRating == 100.0)
+                        {
+                            for (int i = 0; i < 5; i++)
+                            {
+                                <i class="fa fa-star" style="color: #fb6340"></i>}
+                        }
+                    }
+                </div>
+            </div>
+            <!-- Subtitle -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="mb-0 font-weight-light" style="color:white; font-size: 15px">@Model.Campaign.Subtitle</h4>
+                </div>
+            </div>
+            <br />
+            <!-- Author -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-1 mb-sm-0">
+                            <a href="javascript:;" class="avatar rounded-circle">
+                                <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/team-4.jpg">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 mb-sm-0">
+                            <a>
+                                <div class="description mr-auto" style="color: white">@Model.Campaign.Creator.UserSurname</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Progress -->
+    <center>
+        <div class="progress-wrapper">
+            <div>
+                <h4 class="display-5" style="color:white">@Model.Campaign.TotalMoneyAmount/<b>@Model.Campaign.RequiredMoneyAmount</b> руб.</h4>
+                <div class="progress" style="height: 22px">
+                    <!-- Вычисление % прогресса -->
+                    @{
+                        decimal progressPercent = Math.Round(((Model.Campaign.TotalMoneyAmount / Model.Campaign.RequiredMoneyAmount) * 100), 2);
+                        int percent = Convert.ToInt32(progressPercent);
+                    }
+                    <!-- Progress-Bar -->
+                    <div class="progress-bar" role="progressbar" aria-valuenow="@Model.Campaign.TotalMoneyAmount"
+                         aria-valuemin="0" aria-valuemax="@Model.Campaign.RequiredMoneyAmount" style="width:@percent%">
+                        @progressPercent% собрано
+                    </div>
+                </div>
+            </div>
+        </div>
+        @if (Model.Campaign.TotalMoneyAmount >= Model.Campaign.RequiredMoneyAmount)
+        {
+            <span class="btn-inner--text">Завершён</span>
+        }
+        else
+        {
+            <a class="btn btn-warning btn-icon mt-3 mb-sm-0" asp-controller="Payment" asp-action="Donate">
+                <span class="btn-inner--text">Поддержать</span>
+            </a>
+        }
+    </center>
+    <hr style="background-color: white" />
+    <!-- NAVS -->
+    <div class="row mt-0">
+        <div class="col-md-9">
+            <div class="nav-wrapper">
+                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-cloud-upload-96 mr-2"></i>Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>Комментарии</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Описание -->
+                        <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                            <!-- Youtube video -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="@Model.Campaign.VideoURL"></iframe>
+                            </div>
+                            <br /><br />
+                            <p class="description" style="color:black">@Html.Raw(@Model.Campaign.Text)</p>
+                        </div>
+                        <!-- Новости -->
+                        <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                            @if (Model.Campaign.CreatorId == userId)
+                            {
+                                <a asp-controller="News" asp-action="Add" asp-route-id="@Model.Campaign.Id">
+                                    <button class="btn btn-primary btn-sm" style=" margin: 0px 0px 10px 0px; background-color: #fb6340; border-color: #fb6340">Добавить новость</button>
+                                </a>
+                            }
+                            @if (Model.Campaign.News.Count() == 0)
+                            {
+                                <center><h3>Новостей пока нет.</h3></center>
+                            }
+                            else
+                            {
+                                foreach (var entity in Model.Campaign.News)
+                                {
+                                    <center><h3>@entity.Title</h3></center>
+                                    <p class="description" style="text-align: right">@entity.DateAdded</p>
+                                    <img class="card-img-top" src="@entity.ImagePath" alt="Card image cap">
+                                    <p class="description" style="color:black">@Html.Raw(@entity.Text)</p>
+                                    @if (Model.Campaign.CreatorId == userId)
+                                    {
+                                        <form style="display: inline-block;" id="form-@entity.Id" asp-controller="News" asp-action="Delete" method="post">
+                                            <input type="hidden" name="id" value="@entity.Id">
+                                            <button href="#" onclick="document.getElementById('form-@entity.Id').submit();" type="button" class="btn btn-sm btn-danger btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Удалить</button>
+                                        </form>
+                                    }
+                                    <br /><br /> <br /><br />
+                                }
+                            }
+                        </div>
+                        <!-- Комментарии -->
+                        <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                            <center><h3>@Model.Campaign.Comments.Count() Комментариев</h3></center>
+                            <div class="container mt-5 mb-5">
+                                <div class="d-flex justify-content-center row">
+                                    <div class="d-flex flex-column col-md-8">
+                                        <div class="coment-bottom bg-white p-2 px-4">
+                                            <!-- Post -->
+                                            @if (User.Identity.IsAuthenticated)
+                                            {
+                                            <form asp-controller="Campaign" asp-action="Comment">
+                                                <input asp-for="@Model.Campaign.Id" readonly hidden />
+                                                 <input asp-for="@Model.User.Id" readonly hidden />
+                                                <img class="img-fluid img-responsive rounded-circle mr-2" src="https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/team-4.jpg" width="38">
+                                                <label for="comment">Комментарий</label>
+                                                <textarea asp-for="@Model.Comment.Text" class="form-control" rows="3" required></textarea>
+
+                                                <button class="btn btn-primary" type="submit">Комментировать</button>
+                                            </form>
+                                            }
+                                            else
+                                            {
+                                                <a class="reply-btn btn" asp-page="/Account/Login/" asp-route-ReturnUrl="~/Campaign/GetCampaign/@Model.Campaign.Id">Авторизуйтесь, чтобы оставить комментарий</a>
+                                            }
+
+                                            @{ 
+                                                CrowdUser user;
+                                            }
+                                            <!-- List -->
+                                            @foreach (Comment comment in Model.Campaign.Comments)
+                                            {
+                                                <div class="commented-section mt-2">
+                                                    <div class="d-flex flex-row align-items-center commented-user">
+                                                        <h5 class="mr-2">@comment.User.UserSurname</h5><span class="dot mb-1"></span><span class="mb-1 ml-2">@comment.DateAdded.ToString("MMMM d, yyyy hh:mm tt")</span>
+                                                    </div>
+                                                    <div class="comment-text-sm"><span>@comment.Text</span></div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bonuses -->
+        <div class="col-md-1">
+            <center><h3 class="display-4" style="color: white">Бонусы</h3></center>
+            @if (Model.Campaign.CreatorId == userId)
+            {
+                <a asp-controller="Bonuses" asp-action="Add" asp-route-id="@Model.Campaign.Id">
+                    <button class="btn btn-primary btn-sm" style=" margin: 0px 0px 10px 0px; background-color: #fb6340; border-color: #fb6340">Добавить бонус</button>
+                </a>
+            }
+            @if (Model.Campaign.Bonuses.Count() == 0)
+            {
+                <center><h3>бонусов нет.</h3></center>
+            }
+            else
+            {
+                @foreach (Bonus bonus in Model.Campaign.Bonuses)
+                {
+        <div class="card" style="width: 18rem;">
+            <h5 class="card-title">@bonus.Title</h5>
+            <p class="card-text">@bonus.Text</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@bonus.TransferAmount руб.</li>
+            </ul>
+            @if (!(Model.Campaign.TotalMoneyAmount >= Model.Campaign.RequiredMoneyAmount))
+            {
+                
+        <div class="card-body">
+            <a class="small-box-footer" asp-controller="Payment" asp-action="Donate" asp-route-id="@Model.Campaign.Id">Поддержать <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+            }
+            @if (Model.Campaign.CreatorId == userId)
+            {
+                <form style="display: inline-block;" id="form-@bonus.Id" asp-controller="Bonuses" asp-action="Delete" method="post">
+                    <input type="hidden" name="id" value="@bonus.Id">
+                    <button href="#" onclick="document.getElementById('form-@bonus.Id').submit();" type="button" class="btn btn-sm btn-danger btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body" data-animation="true">Удалить</button>
+                </form>
+            }
+        </div>
+                    <br /><br />
+                }
+            }
+        </div>
+        </div>
+    </div>

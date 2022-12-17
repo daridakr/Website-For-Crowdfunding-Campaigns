@@ -22,5 +22,6 @@ namespace CrowdfundingSite.Domain.Entities
         public override string Text { get; set; }
 
         public int Likes { get; set; }
+
     }
 }

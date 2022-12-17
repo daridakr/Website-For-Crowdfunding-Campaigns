@@ -188,3 +188,583 @@ C:\Users\даша\Documents\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\M
 C:\Users\даша\Documents\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Owin.dll
 C:\Users\даша\Documents\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Campaign.cshtml.g.cs
 C:\Users\даша\Documents\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csprojAssemblyReference.cache
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\web.config
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\appsettings.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\appsettings.production.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\appsettings.staging.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\bower.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\composer.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\libman.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\package.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.StaticWebAssets.xml
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.exe
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.deps.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.runtimeconfig.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.runtimeconfig.dev.json
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ref\CrowdfundingSite.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.pdb
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.Views.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.Views.pdb
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CloudinaryDotNet.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Humanizer.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNet.Identity.Owin.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Host.SystemWeb.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Cookies.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Facebook.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Google.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Owin.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.AssemblyReference.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.GeneratedMSBuildEditorConfig.editorconfig
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.AssemblyInfoInputs.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.AssemblyInfo.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.CoreCompileInputs.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.MvcApplicationPartsAssemblyInfo.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.MvcApplicationPartsAssemblyInfo.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorAssemblyInfo.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorAssemblyInfo.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\staticwebassets\CrowdfundingSite.StaticWebAssets.Manifest.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\staticwebassets\CrowdfundingSite.StaticWebAssets.xml
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\scopedcss\bundle\CrowdfundingSite.styles.css
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.TagHelpers.input.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.TagHelpers.output.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorCoreGenerate.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\CampaignItems\Edit.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\Home\Index.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\_ViewImports.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\_ViewStart.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Campaign.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\CssPartial.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\FooterPartial.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\IconsPartial.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\MetategsPartial.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\NavbarPartial.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\ScriptsPartial.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorTargetAssemblyInfo.cache
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorTargetAssemblyInfo.cs
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.Views.pdb
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.CopyComplete
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.dll
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\ref\CrowdfundingSite.dll
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.pdb
+D:\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.genruntimeconfig.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\web.config
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\appsettings.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\appsettings.production.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\appsettings.staging.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\bower.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\composer.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\libman.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\package.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.StaticWebAssets.xml
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.exe
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.deps.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.runtimeconfig.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.runtimeconfig.dev.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ref\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.Views.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.Views.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Humanizer.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNet.Identity.Owin.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Host.SystemWeb.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Cookies.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Facebook.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Google.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\Owin.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.AssemblyReference.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.AssemblyInfoInputs.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.AssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.CoreCompileInputs.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.MvcApplicationPartsAssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.MvcApplicationPartsAssemblyInfo.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorAssemblyInfo.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorAssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\staticwebassets\CrowdfundingSite.StaticWebAssets.Manifest.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\staticwebassets\CrowdfundingSite.StaticWebAssets.xml
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\scopedcss\bundle\CrowdfundingSite.styles.css
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.TagHelpers.input.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.TagHelpers.output.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorCoreGenerate.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\CampaignItems\Edit.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\Home\Index.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\_ViewImports.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\_ViewStart.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Campaign.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\CssPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\FooterPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\IconsPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\MetategsPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\NavbarPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\ScriptsPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorTargetAssemblyInfo.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorTargetAssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.Views.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.CopyComplete
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\ref\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.genruntimeconfig.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\DisplayEmail.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\ChangePassword.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.AssemblyInfoInputs.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.AssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.CoreCompileInputs.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.MvcApplicationPartsAssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.MvcApplicationPartsAssemblyInfo.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorAssemblyInfo.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorAssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\ref\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\web.config
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\appsettings.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\appsettings.production.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\appsettings.staging.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\bower.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\composer.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\libman.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\package.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.StaticWebAssets.xml
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.exe
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.deps.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.runtimeconfig.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.runtimeconfig.dev.json
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ref\CrowdfundingSite.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.Views.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CrowdfundingSite.Views.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Humanizer.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNet.Identity.Owin.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Host.SystemWeb.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Cookies.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Facebook.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.Google.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\Owin.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\staticwebassets\CrowdfundingSite.StaticWebAssets.Manifest.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\staticwebassets\CrowdfundingSite.StaticWebAssets.xml
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\scopedcss\bundle\CrowdfundingSite.styles.css
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.TagHelpers.input.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.TagHelpers.output.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorCoreGenerate.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\CampaignItems\Edit.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\Home\Index.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\_ViewImports.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Areas\User\Views\_ViewStart.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\ChangePassword.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\DisplayEmail.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Campaign.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\CssPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\FooterPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\IconsPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\MetategsPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\NavbarPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\ScriptsPartial.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorTargetAssemblyInfo.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.RazorTargetAssemblyInfo.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.Views.pdb
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.CopyComplete
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.genruntimeconfig.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Campaign\GetAllCampaignes.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Campaign\GetCampaign.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Campaign\SearchCampaignes.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Payment\Donate.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\News\Add.cshtml.g.cs
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\CrowdfundingSite.csproj.AssemblyReference.cache
+C:\Учёба\Базы Данных\Курсовая\CrowdfundingSite — копия\CrowdfundingSite\obj\Debug\net5.0\Razor\Views\Bonuses\Add.cshtml.g.cs

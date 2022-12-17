@@ -24,6 +24,10 @@
     {
       "library": "jquery@1.10.2",
       "destination": "wwwroot/jquery1.10.2/"
+    },
+    {
+      "library": "bootstrap@5.1.1",
+      "destination": "wwwroot/bootstrap/"
     }
   ]
 }

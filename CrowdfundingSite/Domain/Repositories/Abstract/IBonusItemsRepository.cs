@@ -8,9 +8,10 @@ namespace CrowdfundingSite.Domain.Repositories.Abstract
 {
     public interface IBonusItemsRepository
     {
-        IQueryable<Bonus> GetAllBonuses(Guid campaignId);
+        IEnumerable<Bonus> GetAllBonuses(Guid campaignId);
         Bonus GetBonusById(Guid id);
-        void SaveBonus(Bonus entity);
+        Task<Bonus> Add(Bonus comment);
+
         void DeleteBonus(Guid id);
     }
 }

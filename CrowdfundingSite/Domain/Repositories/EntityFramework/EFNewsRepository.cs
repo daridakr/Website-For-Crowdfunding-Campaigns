@@ -13,10 +13,14 @@ namespace CrowdfundingSite.Domain.Repositories.EntityFramework
         private readonly DbContext context;
         public EFNewsRepository(DbContext context) => this.context = context;
 
-        public IQueryable<News> GetAllNews(Guid campaignId)
+        public IEnumerable<News> GetAllNews(Guid campaignId)
         {
-            return (IQueryable<News>)context.News.FirstOrDefault(x => x.CampaignId == campaignId);
+            IEnumerable<News> news = from i in context.News.AsQueryable()
+                                            where i.CampaignId == campaignId
+                                            select i;
+            return news;
         }
+
         public News GetNewById(Guid id)
         {
             return context.News.FirstOrDefault(x => x.Id == id);

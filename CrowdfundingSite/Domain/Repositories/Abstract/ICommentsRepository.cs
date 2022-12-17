@@ -8,8 +8,9 @@ namespace CrowdfundingSite.Domain.Repositories.Abstract
 {
     public interface ICommentsRepository
     {
-        IQueryable<Comment> GetAllComments(Guid campaignId);
-        Comment GetCommentById(Guid id);
+        IEnumerable<Comment> GetAllComments(Guid campaignId);
+        Comment GetComment(Guid commentId);
         void DeleteComment(Guid id);
+        Task<Comment> Add(Comment comment);
     }
 }

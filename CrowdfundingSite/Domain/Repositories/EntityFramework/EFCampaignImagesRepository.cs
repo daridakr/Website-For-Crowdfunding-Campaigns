@@ -13,9 +13,13 @@ namespace CrowdfundingSite.Domain.Repositories.EntityFramework
         private readonly DbContext context;
         public EFCampaignImagesRepository(DbContext context) => this.context = context;
 
-        public IQueryable<CampaignImage> GetAllCampaignImages(Guid campaignId)
+        public IEnumerable<CampaignImage> GetAllCampaignImages(Guid campaignId)
         {
-            return (IQueryable<CampaignImage>)context.CampaignImages.FirstOrDefault(x => x.CampaignId == campaignId);
+            IEnumerable<CampaignImage> images = from i in context.CampaignImages.AsQueryable()
+                                                where i.CampaignId==campaignId
+                                                select i;
+            return images;
+            //return (ICollection<CampaignImage>)context.CampaignImages.FirstOrDefault(x => x.CampaignId == campaignId);
         }
         public CampaignImage GetCampaignImageById(Guid id)
         {

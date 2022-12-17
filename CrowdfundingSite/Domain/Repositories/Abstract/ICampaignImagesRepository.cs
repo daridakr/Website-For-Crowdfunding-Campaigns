@@ -8,7 +8,7 @@ namespace CrowdfundingSite.Domain.Repositories.Abstract
 {
     public interface ICampaignImagesRepository
     {
-        IQueryable<CampaignImage> GetAllCampaignImages(Guid campaignId);
+        IEnumerable<CampaignImage> GetAllCampaignImages(Guid campaignId);
         CampaignImage GetCampaignImageById(Guid id);
         void SaveCampaignImage(CampaignImage image);
         void DeleteCampaignImage(Guid id);

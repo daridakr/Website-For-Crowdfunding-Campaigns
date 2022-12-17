@@ -47,5 +47,7 @@ namespace CrowdfundingSite.Domain.Entities
 
         [Display(Name = "Комментарии")]
         public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+        public ICollection<Rating> Ratings { get; set; }
     }
 }

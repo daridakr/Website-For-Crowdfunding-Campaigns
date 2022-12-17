@@ -29,6 +29,7 @@ namespace CrowdfundingSite.Domain
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<CampaignImage> CampaignImages { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -38,11 +39,14 @@ namespace CrowdfundingSite.Domain
             builder.Entity<Campaign>().HasOne(c => c.Creator).WithMany(u => u.Campaignes).HasForeignKey(u => u.CreatorId);
             builder.Entity<Campaign>().HasOne(c => c.Theme).WithMany(u => u.Campaigns).HasForeignKey(u => u.ThemeId);
             builder.Entity<Campaign>().HasMany(c => c.Images).WithOne(p => p.Campaign).HasForeignKey(u=>u.CampaignId);
+            builder.Entity<Campaign>().HasMany(c => c.Ratings).WithOne(p => p.Campaign).HasForeignKey(u => u.CampaignId);
             builder.Entity<Campaign>().HasMany(c => c.Tags).WithMany(p => p.Campaigns);
             builder.Entity<Campaign>().HasMany(c => c.Bonuses).WithOne(p => p.Campaign).HasForeignKey(u=>u.CampaignId);
             builder.Entity<Campaign>().HasMany(c => c.News).WithOne(p => p.Campaign).HasForeignKey(u => u.CampaignId);
             builder.Entity<Campaign>().HasMany(c => c.Comments).WithOne(p => p.Campaign).HasForeignKey(u => u.CampaignId);
+            builder.Entity<Campaign>().HasMany(c => c.Ratings).WithOne(p => p.Campaign).HasForeignKey(u => u.CampaignId);
             builder.Entity<CrowdUser>().HasMany(c => c.Comments).WithOne(p => p.User).HasForeignKey(u => u.UserId);
+            builder.Entity<CrowdUser>().HasMany(c => c.Ratings).WithOne(p => p.CrowdUser).HasForeignKey(u => u.CrowdUserId);
             builder.Entity<Bonus>().HasMany(c => c.SupportingUsers).WithMany(p => p.PaidBonuses);
 
             builder.Entity<IdentityRole>().HasData(new IdentityRole
